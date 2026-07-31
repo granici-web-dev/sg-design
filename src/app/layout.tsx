@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Onest } from "next/font/google";
 import "./globals.css";
+import "./site.css";
 
 const onest = Onest({
   variable: "--font-onest",
