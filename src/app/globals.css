@@ -6,7 +6,7 @@
   --line:rgba(21,21,18,.13); --line-2:rgba(21,21,18,.08);
   --line-d:rgba(255,255,255,.12); --line-d2:rgba(255,255,255,.07);
   --blue:#2F7A44; --lime:#DCFF90; --peri:#8080FF; --green:#3E9E5C; --coral:#F0623E;
-  --sans:"Onest",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --sans:var(--font-onest),system-ui,-apple-system,"Segoe UI",sans-serif;
   --radius:22px; --radius-sm:16px; --radius-lg:30px;
   --shadow:0 26px 60px -34px rgba(20,20,26,.34);
   --wrap:1600px; --measure:720px; --gut:clamp(18px,3.5vw,48px);

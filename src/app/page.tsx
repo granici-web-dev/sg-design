@@ -1,5 +1,7 @@
 "use client";
 
+import "./site.css";
+
 import type { MouseEvent } from "react";
 
 function playHover(e: MouseEvent<HTMLAnchorElement>) {
