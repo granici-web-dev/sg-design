@@ -39,10 +39,10 @@ export const caseHtmlEn = `
 
     <div class="meta">
       <div class="c"><div class="k">Role</div><div class="v">Sole UI/UX Designer</div></div>
-      <div class="c"><div class="k">Team</div><div class="v">Graphic/illustration &amp; motion designer<br><span style="color:var(--ink-3)">Art direction: illustration &amp; motion</span></div></div>
+      <div class="c"><div class="k">Team</div><div class="v">Art direction: 1 graphic, 1 motion designer</div></div>
       <div class="c"><div class="k">Timeframe</div><div class="v">2023 – 2025</div></div>
       <div class="c"><div class="k">Platform</div><div class="v">Web app · Mobile<br><span style="color:var(--ink-3)">Cardano blockchain</span></div></div>
-      <div class="c"><div class="k">Domain</div><div class="v">Web3 · Geo-SocialFi<br><span style="color:var(--ink-3)">Geo-based SocialFi network</span></div></div>
+      <div class="c"><div class="k">Domain</div><div class="v">Web3 · Location-based SocialFi</div></div>
       <div class="c"><div class="k">Contribution</div><div class="v">UX research · User flows · UI system · Prototype</div></div>
     </div>
   </section>
@@ -127,7 +127,7 @@ export const caseHtmlEn = `
         <div class="bizblock">
           <div class="bizhead">
             <span class="role">Business onboarding</span>
-            <h3>Hyperlocal advertising without crypto knowledge <span class="vbadge">V1</span></h3>
+            <div class="bizh3"><h3>Hyperlocal advertising without crypto knowledge</h3><span class="vbadge">V1</span></div>
             <p>Local businesses wanted reach exactly where people physically are right now — at the level of individual places and time windows instead of coarse radius targeting. Until now, the path there ran through crypto. <strong>I designed a self-service dashboard following the logic of a familiar ad manager:</strong> build a campaign, place it on the map at a location and time window, pay in euros, see results in real time — without a single crypto word in the interface.</p>
             <p class="vnote">Shown is V1 of the ad manager. A redesign was planned but was no longer implemented before I left.</p>
           </div>
@@ -190,7 +190,7 @@ export const caseHtmlEn = `
       <p class="prose" style="max-width:none">The fiat path was validated as a <strong>hypothesis</strong> — the community survey before, the numbers after. It was rolled out in two steps, so each part works on its own:</p>
       <div class="steps">
         <div class="step"><div class="no">Step 1</div><h4>Make credits purchasable</h4><p>First the fiat purchase of the Land Plot Credits themselves — the new Web2 entry into the ecosystem.</p></div>
-        <div class="step"><div class="no">Step 2</div><h4>Buy a plot with credits</h4><p>Then the plot purchase via balance in one step — the survey confirmed the direction.</p></div>
+        <div class="step"><div class="no">Step 2</div><h4>Buy a plot with credits</h4><p>Then the plot purchase via balance in one step — confirmed by the sales figures afterwards.</p></div>
       </div>
     </div>
   </section>
@@ -206,7 +206,7 @@ export const caseHtmlEn = `
         <div class="f"><div class="fk">First week</div><div class="fv">+771 plots · +7%</div></div>
         <div class="f"><div class="fk">New entry point</div><div class="fv">Purchase by bank card instead of wallet</div></div>
       </div>
-      <p class="note"><b>For context:</b> +771 is the first-week increase over the existing base of around 11,000 plots. The feature went live that week — the temporal correlation is strong; I don't claim an isolated causal proof against other effects.</p>
+      <p class="note"><b>For context:</b> +771 is the first-week increase over the existing base of around 11,000 plots. The feature went live that week — the temporal correlation is strong; I don't claim an isolated causal proof against other effects. H2 (repeat purchases) and H3 (payment and legal risk) could no longer be measured in isolation within the observation window.</p>
     </div>
   </section>
 
