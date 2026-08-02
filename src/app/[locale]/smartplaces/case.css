@@ -298,6 +298,22 @@
   .result .facts .fk{color:#41473A;font-size:.8rem}
   .result .facts .fv{margin-top:10px;font-size:clamp(1.1rem,1.5vw,1.5rem);color:#141410;font-weight:600;line-height:1.2;letter-spacing:-.01em}
 
+  /* mobile-app case: animated phone hero */
+  .appcast{margin-top:clamp(26px,3.6vw,52px)}
+  .appcast video{width:100%;height:auto;display:block}
+  /* mobile-app case: phone hero fan + phone rows */
+  .appfan{margin-top:clamp(30px,4.4vw,60px);display:flex;gap:clamp(10px,1.6vw,22px);justify-content:center;align-items:flex-end}
+  .appfan .shot{flex:0 1 300px;max-width:300px;border-radius:30px}
+  .appfan .shot.mid{flex-basis:340px;max-width:340px;box-shadow:0 34px 70px -30px rgba(20,20,26,.5)}
+  .appfan .shot img{width:100%;height:auto;display:block}
+  @media(max-width:640px){.appfan .shot{flex-basis:44vw;max-width:44vw}.appfan .shot.mid{display:none}}
+  .phones .shot{border-radius:30px}
+  .phones figcaption{margin-top:12px}
+  .phrow{display:flex;gap:clamp(10px,1.4vw,20px);align-items:flex-start}
+  .phrow>figure{flex:1;min-width:0}
+  .phrow .shot{border-radius:30px}
+  @media(max-width:640px){.phrow{flex-wrap:wrap}.phrow>figure{flex-basis:44%}}
+
   /* placeholder screen slots (until localized DE exports land) */
   .shotph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;
     min-height:clamp(200px,26vw,380px);background:radial-gradient(120% 120% at 50% 0%,#211F16,#141109);
