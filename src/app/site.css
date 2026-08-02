@@ -109,10 +109,15 @@
   .proj{display:flex;flex-direction:column;background:var(--card);color:var(--on-dark-2);
     border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:transform .3s,box-shadow .3s}
   .proj:hover{transform:translateY(-4px);box-shadow:0 34px 70px -34px rgba(20,20,26,.42)}
-  .proj .pcover{position:relative;aspect-ratio:5/4;overflow:hidden;background:radial-gradient(120% 100% at 64% 28%, #262316, #131109);border-bottom:1px solid var(--line-d2)}
+  .proj .pcover{position:relative;aspect-ratio:45/32;overflow:hidden;background:radial-gradient(120% 100% at 64% 28%, #262316, #131109);border-bottom:1px solid var(--line-d2)}
   .proj .pcover:has(.imgph)::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(58% 52% at 64% 30%, rgba(220,255,144,.12), transparent 70%)}
   .proj .pcover .slotimg{transition:transform .5s cubic-bezier(.2,.7,.2,1)}
   .proj:hover .pcover .slotimg{transform:scale(1.03)}
+  /* hover-to-play cover: still image below, screencast fades in only on hover */
+  .hovervid{position:absolute;inset:0}
+  .hovervid .hv{opacity:0;transition:opacity .3s ease}
+  .hovervid:hover .hv{opacity:1}
+  @media(prefers-reduced-motion:reduce){.hovervid .hv{transition:none}}
   .proj .pcover .corner{position:absolute;right:14px;bottom:14px;width:34px;height:34px;border-radius:50%;
     background:rgba(255,255,255,.1);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;color:#F3F3EC;font-size:1rem;transition:transform .2s,background .2s,color .2s}
   .proj:hover .pcover .corner{background:var(--lime);color:#151510;transform:translate(2px,-2px)}

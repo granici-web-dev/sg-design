@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { content, hasLocale, type Locale } from "./content";
 import LeadCard from "./LeadCard";
+import HoverVideo from "./HoverVideo";
 
 export default async function Home({
   params,
@@ -61,7 +62,14 @@ export default async function Home({
             <div className="projgrid">
               {t.projs.map((p) => (
                 <a className="proj" href={"slug" in p ? `/${locale}/${p.slug}` : "#kontakt"} key={p.title}>
-                  <div className="pcover"><img className="slotimg" src={`/screens/${p.img}`} width={2304} height={1856} alt={p.alt} decoding="async" loading="lazy" /><span className="corner">↗</span></div>
+                  <div className="pcover">
+                    {"slug" in p && p.slug === "gastrobeleg" ? (
+                      <HoverVideo poster="/screens/gb-uebersicht-poster.jpg" mp4="/screens/gb-uebersicht-cast.mp4" webm="/screens/gb-uebersicht-cast.webm" alt={p.alt} />
+                    ) : (
+                      <img className="slotimg" src={`/screens/${p.img}`} width={2304} height={1856} alt={p.alt} decoding="async" loading="lazy" />
+                    )}
+                    <span className="corner">↗</span>
+                  </div>
                   <div className="pbody">
                     <span className="ptag2">{p.tag}</span>
                     <h3>{p.title}</h3>
