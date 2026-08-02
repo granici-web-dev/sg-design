@@ -298,6 +298,16 @@
   .result .facts .fk{color:#41473A;font-size:.8rem}
   .result .facts .fv{margin-top:10px;font-size:clamp(1.1rem,1.5vw,1.5rem);color:#141410;font-weight:600;line-height:1.2;letter-spacing:-.01em}
 
+  /* placeholder screen slots (until localized DE exports land) */
+  .shotph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;
+    min-height:clamp(200px,26vw,380px);background:radial-gradient(120% 120% at 50% 0%,#211F16,#141109);
+    text-align:center;padding:28px;border:1px dashed var(--line-d)}
+  .shotph .pht{color:#EDEEEF;font-size:1rem;font-weight:500;letter-spacing:-.01em}
+  .shotph .pht::before{content:"";display:inline-block;width:8px;height:8px;border-radius:2px;
+    background:var(--lime);margin-right:9px;vertical-align:middle}
+  .shotph .phs{color:var(--on-dark-3);font-size:.76rem;text-transform:uppercase;letter-spacing:.09em}
+  .phones .shotph,.fig .shotph.tall{min-height:clamp(320px,44vw,520px)}
+
   /* gallery */
   .gal{margin-top:10px;display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2.2vw,24px)}
   @media(max-width:760px){.gal{grid-template-columns:1fr}}

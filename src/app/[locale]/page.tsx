@@ -60,13 +60,13 @@ export default async function Home({
             <LeadCard href={`/${locale}/smartplaces`} tag={t.lead.tag} title={t.lead.title} desc={t.lead.desc} more={t.lead.more} />
             <div className="projgrid">
               {t.projs.map((p) => (
-                <a className="proj" href="#kontakt" key={p.title}>
+                <a className="proj" href={"slug" in p ? `/${locale}/${p.slug}` : "#kontakt"} key={p.title}>
                   <div className="pcover"><img className="slotimg" src={`/screens/${p.img}`} width={2304} height={1856} alt={p.alt} decoding="async" loading="lazy" /><span className="corner">↗</span></div>
                   <div className="pbody">
                     <span className="ptag2">{p.tag}</span>
                     <h3>{p.title}</h3>
                     <p>{p.desc}</p>
-                    <span className="pmore">{t.projMore} <span className="arw">→</span></span>
+                    <span className="pmore">{"slug" in p ? t.lead.more : t.projMore} <span className="arw">→</span></span>
                   </div>
                 </a>
               ))}

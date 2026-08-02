@@ -23,7 +23,7 @@ export const content = {
     work: { label: "Ausgewählte Arbeiten", h2: "Vier Produkte, ein Prinzip: Klarheit.", sub: "Vom Web3-Netzwerk bis zur Pharma-Seite — jede Arbeit macht etwas Erklärungsbedürftiges einfach bedienbar." },
     lead: { tag: "Web3 · Geo-SocialFi", title: "SmartPlaces", desc: "Ein geolokales Web3-Netzwerk zugänglich machen: digitales Land per Bankkarte kaufen statt per Wallet. In der ersten Woche nach dem Rollout: +771 verkaufte Plots.", more: "Fallstudie lesen" },
     projs: [
-      { tag: "B2B SaaS · Fintech", title: "GastroBeleg", desc: "Belege scannen, prüfen und DATEV-konform exportieren (SKR, Pfand, USt.). Eigenes Produktkonzept.", img: "gen-gastrobeleg.jpg", alt: "Check-Scan-Motiv: Smartphone und Belege" },
+      { tag: "B2B SaaS · Fintech", title: "GastroBeleg", desc: "Belege scannen, prüfen und DATEV-konform exportieren (SKR, Pfand, USt.). Eigenes Produktkonzept.", img: "gen-gastrobeleg.jpg", alt: "Check-Scan-Motiv: Smartphone und Belege", slug: "gastrobeleg" },
       { tag: "EdTech · Enterprise", title: "XU", desc: "Plattform für Nachhaltigkeits-Lernen: Dashboard, Kurse und Lernpfade unter einer Navigation.", img: "gen-xu.jpg", alt: "Abstraktes Motiv: Nachhaltigkeit und Lernen" },
       { tag: "Pharma · Landing", title: "Bioverde", desc: "Produktseite für ein Pharma-Präparat: klare Hierarchie, ruhige Typografie, konforme Pflichtangaben.", img: "gen-bioverde.jpg", alt: "Botanisches Motiv: grüne Blätter mit Tropfen" },
     ],
@@ -53,7 +53,7 @@ export const content = {
     work: { label: "Selected work", h2: "Four products, one principle: clarity.", sub: "From a Web3 network to a pharma page — every project makes something that needs explaining simply usable." },
     lead: { tag: "Web3 · Geo-SocialFi", title: "SmartPlaces", desc: "Making a geo-based Web3 network accessible: buy digital land by card instead of by wallet. In the first week after rollout: +771 plots sold.", more: "Read case study" },
     projs: [
-      { tag: "B2B SaaS · Fintech", title: "GastroBeleg", desc: "Scan, verify and export receipts DATEV-compliant (SKR, deposit, VAT). Own product concept.", img: "gen-gastrobeleg.jpg", alt: "Receipt-scan motif: smartphone and receipts" },
+      { tag: "B2B SaaS · Fintech", title: "GastroBeleg", desc: "Scan, verify and export receipts DATEV-compliant (SKR, deposit, VAT). Own product concept.", img: "gen-gastrobeleg.jpg", alt: "Receipt-scan motif: smartphone and receipts", slug: "gastrobeleg" },
       { tag: "EdTech · Enterprise", title: "XU", desc: "Platform for sustainability learning: dashboard, courses and learning paths under one navigation.", img: "gen-xu.jpg", alt: "Abstract motif: sustainability and learning" },
       { tag: "Pharma · Landing", title: "Bioverde", desc: "Product page for a pharma preparation: clear hierarchy, calm typography, compliant mandatory information.", img: "gen-bioverde.jpg", alt: "Botanical motif: green leaves with droplets" },
     ],
