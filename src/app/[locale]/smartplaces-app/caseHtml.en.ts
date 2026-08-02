@@ -27,10 +27,10 @@ export const caseHtmlEn = `
     </div>
 
     <div class="appcast">
-      <video autoplay loop muted playsinline preload="auto" width="2480" height="1680" poster="/screens/sp-app-hero-poster.jpg"
+      <video autoplay loop muted playsinline preload="auto" width="2480" height="1680" poster="/screens/sp-app-hero-light-poster.jpg"
         aria-label="Screencast: three app screens of the SmartPlaces app — the map with cluster cells on the left, the geo feed on the right; the centre phone runs through the core loop from AR mode to the claimed reward and the balance">
-        <source src="/screens/sp-app-hero.mp4" type="video/mp4">
-        <source src="/screens/sp-app-hero.webm" type="video/webm">
+        <source src="/screens/sp-app-hero-light.mp4" type="video/mp4">
+        <source src="/screens/sp-app-hero-light.webm" type="video/webm">
       </video>
     </div>
 

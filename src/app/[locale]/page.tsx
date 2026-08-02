@@ -65,6 +65,8 @@ export default async function Home({
                   <div className="pcover">
                     {"slug" in p && p.slug === "gastrobeleg" ? (
                       <HoverVideo poster="/screens/gb-uebersicht-poster.jpg" mp4="/screens/gb-uebersicht-cast.mp4" webm="/screens/gb-uebersicht-cast.webm" alt={p.alt} />
+                    ) : "slug" in p && p.slug === "smartplaces-app" ? (
+                      <HoverVideo poster="/screens/sp-app-hero-poster.jpg" mp4="/screens/sp-app-hero.mp4" webm="/screens/sp-app-hero.webm" alt={p.alt} />
                     ) : (
                       <img className="slotimg" src={`/screens/${p.img}`} width={2304} height={1856} alt={p.alt} decoding="async" loading="lazy" />
                     )}

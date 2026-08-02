@@ -25,7 +25,7 @@ export const content = {
     projs: [
       { tag: "B2B SaaS · Fintech", title: "GastroBeleg", desc: "Belege scannen, prüfen und DATEV-konform exportieren (SKR, Pfand, USt.). Eigenes Produktkonzept.", img: "gen-gastrobeleg.jpg", alt: "Check-Scan-Motiv: Smartphone und Belege", slug: "gastrobeleg" },
       { tag: "EdTech · Enterprise", title: "XU", desc: "Plattform für Nachhaltigkeits-Lernen: Dashboard, Kurse und Lernpfade unter einer Navigation.", img: "gen-xu.jpg", alt: "Abstraktes Motiv: Nachhaltigkeit und Lernen" },
-      { tag: "Pharma · Landing", title: "Bioverde", desc: "Produktseite für ein Pharma-Präparat: klare Hierarchie, ruhige Typografie, konforme Pflichtangaben.", img: "gen-bioverde.jpg", alt: "Botanisches Motiv: grüne Blätter mit Tropfen" },
+      { tag: "Web3 · Geo-Social · AR", title: "SmartPlaces App", desc: "Mobile-App-Konzept: die reale Welt als soziale Karte — Cluster, Radius, Broadcasts und AR-Belohnungen.", img: "sp-app-hero-poster.jpg", alt: "SmartPlaces App — interaktiver Prototyp-Flow", slug: "smartplaces-app" },
     ],
     projMore: "Bald als Fallstudie",
     about: {
@@ -55,7 +55,7 @@ export const content = {
     projs: [
       { tag: "B2B SaaS · Fintech", title: "GastroBeleg", desc: "Scan, verify and export receipts DATEV-compliant (SKR, deposit, VAT). Own product concept.", img: "gen-gastrobeleg.jpg", alt: "Receipt-scan motif: smartphone and receipts", slug: "gastrobeleg" },
       { tag: "EdTech · Enterprise", title: "XU", desc: "Platform for sustainability learning: dashboard, courses and learning paths under one navigation.", img: "gen-xu.jpg", alt: "Abstract motif: sustainability and learning" },
-      { tag: "Pharma · Landing", title: "Bioverde", desc: "Product page for a pharma preparation: clear hierarchy, calm typography, compliant mandatory information.", img: "gen-bioverde.jpg", alt: "Botanical motif: green leaves with droplets" },
+      { tag: "Web3 · Geo-Social · AR", title: "SmartPlaces App", desc: "Mobile app concept: the real world as a social map — clusters, radius, broadcasts and AR rewards.", img: "sp-app-hero-poster.jpg", alt: "SmartPlaces App — interactive prototype flow", slug: "smartplaces-app" },
     ],
     projMore: "Case study soon",
     about: {
