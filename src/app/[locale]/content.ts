@@ -24,7 +24,7 @@ export const content = {
     lead: { tag: "Web3 · Geo-SocialFi", title: "SmartPlaces", desc: "Ein geolokales Web3-Netzwerk zugänglich machen: digitales Land per Bankkarte kaufen statt per Wallet. In der ersten Woche nach dem Rollout: +771 verkaufte Plots.", more: "Fallstudie lesen" },
     projs: [
       { tag: "B2B SaaS · Fintech", title: "GastroBeleg", desc: "Belege scannen, prüfen und DATEV-konform exportieren (SKR, Pfand, USt.). Eigenes Produktkonzept.", img: "gen-gastrobeleg.jpg", alt: "Check-Scan-Motiv: Smartphone und Belege", slug: "gastrobeleg" },
-      { tag: "EdTech · Enterprise", title: "XU", desc: "Plattform für Nachhaltigkeits-Lernen: Dashboard, Kurse und Lernpfade unter einer Navigation.", img: "gen-xu.jpg", alt: "Abstraktes Motiv: Nachhaltigkeit und Lernen" },
+      { tag: "EdTech · Design System", title: "XU", desc: "White-label-Lernplattform: eine Farb-Architektur, die sich in jede Kunden-CI einfügt — plus konsistente Content-Karten und ein fokussierter Checkout.", img: "xu-card.jpg", alt: "XU-Lernplattform in vier Kunden-Themes — dasselbe Layout, verschiedene Marken-Farben", slug: "xu" },
       { tag: "Web3 · Geo-Social · AR", title: "SmartPlaces App", desc: "Mobile-App-Konzept: die reale Welt als soziale Karte — Cluster, Radius, Broadcasts und AR-Belohnungen.", img: "sp-app-hero-poster.jpg", alt: "SmartPlaces App — interaktiver Prototyp-Flow", slug: "smartplaces-app" },
     ],
     projMore: "Bald als Fallstudie",
@@ -54,7 +54,7 @@ export const content = {
     lead: { tag: "Web3 · Geo-SocialFi", title: "SmartPlaces", desc: "Making a geo-based Web3 network accessible: buy digital land by card instead of by wallet. In the first week after rollout: +771 plots sold.", more: "Read case study" },
     projs: [
       { tag: "B2B SaaS · Fintech", title: "GastroBeleg", desc: "Scan, verify and export receipts DATEV-compliant (SKR, deposit, VAT). Own product concept.", img: "gen-gastrobeleg.jpg", alt: "Receipt-scan motif: smartphone and receipts", slug: "gastrobeleg" },
-      { tag: "EdTech · Enterprise", title: "XU", desc: "Platform for sustainability learning: dashboard, courses and learning paths under one navigation.", img: "gen-xu.jpg", alt: "Abstract motif: sustainability and learning" },
+      { tag: "EdTech · Design System", title: "XU", desc: "White-label learning platform: a colour architecture that adapts to any client's brand — plus consistent content cards and a focused checkout.", img: "xu-card.jpg", alt: "XU learning platform in four client themes — same layout, different brand colours", slug: "xu" },
       { tag: "Web3 · Geo-Social · AR", title: "SmartPlaces App", desc: "Mobile app concept: the real world as a social map — clusters, radius, broadcasts and AR rewards.", img: "sp-app-hero-poster.jpg", alt: "SmartPlaces App — interactive prototype flow", slug: "smartplaces-app" },
     ],
     projMore: "Case study soon",

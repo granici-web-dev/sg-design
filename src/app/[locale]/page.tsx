@@ -68,7 +68,7 @@ export default async function Home({
                     ) : "slug" in p && p.slug === "smartplaces-app" ? (
                       <HoverVideo poster="/screens/sp-app-hero-poster.jpg" mp4="/screens/sp-app-hero.mp4" webm="/screens/sp-app-hero.webm" alt={p.alt} />
                     ) : (
-                      <img className="slotimg" src={`/screens/${p.img}`} width={2304} height={1856} alt={p.alt} decoding="async" loading="lazy" />
+                      <HoverVideo poster="/screens/xu-hero-dark-poster.jpg" mp4="/screens/xu-hero-dark.mp4" webm="/screens/xu-hero-dark.webm" alt={p.alt} />
                     )}
                     <span className="corner">↗</span>
                   </div>
