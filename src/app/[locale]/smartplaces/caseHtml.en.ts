@@ -65,23 +65,6 @@ export const caseHtmlEn = `
     </div>
   </section>
 
-  <!-- 3 · RESEARCH -->
-  <section class="wrap">
-    <div class="bigcard light">
-      <span class="slabel clabel">Research</span>
-      <p class="prose" style="max-width:none">I didn't start from a solution, but from data. Four sources pointed in the same direction — the crypto hurdle, not the product itself, was slowing sales.</p>
-      <div class="sources">
-          <div class="source"><div class="no">01</div><h4>Analytics</h4><p>Customer journey &amp; user flow (current state)</p></div>
-          <div class="source"><div class="no">02</div><h4>Community survey</h4><p>76 responses (Discord)</p></div>
-          <div class="source"><div class="no">03</div><h4>Competitive analysis</h4><p>Web3 land &amp; map products</p></div>
-          <div class="source"><div class="no">04</div><h4>Stakeholder workshops</h4><p>Business goals &amp; constraints</p></div>
-      </div>
-      <div class="pull">
-        <div class="q">In our Discord community, 76 users answered a survey — the most requested wish: to buy land plots <span class="g">simply by card</span>, without a wallet.</div>
-      </div>
-    </div>
-  </section>
-
   <!-- 4 · HYPOTHESES -->
   <section class="wrap">
     <div class="bigcard light">

@@ -63,24 +63,6 @@ export const caseHtmlEn = `
     </div>
   </section>
 
-  <!-- 3 · RESEARCH -->
-  <section class="wrap">
-    <div class="bigcard light">
-      <span class="slabel clabel">Research · desk &amp; domain</span>
-      <p class="prose" style="max-width:none">Honestly framed: not a field study with a user sample, but an <strong>AI-assisted desk-research workflow</strong>. It produced a sourced competitive synthesis, the German domain rules and two clearly separated user profiles — the basis for the PRD.</p>
-      <div class="sources">
-          <div class="source"><div class="no">01</div><h4>Competitive analysis</h4><p>10 products with prices &amp; reviews (FoodNotify, bimetrics, DATEV, MarginEdge …)</p></div>
-          <div class="source"><div class="no">02</div><h4>Domain rules</h4><p>VAT 7/19 %, deposit (Pfand), GoBD, DATEV EXTF</p></div>
-          <div class="source"><div class="no">03</div><h4>Two user profiles</h4><p>Kitchen (15 sec.) vs. owner (desktop, mornings)</p></div>
-          <div class="source"><div class="no">04</div><h4>Market structure</h4><p>Three layers — the seam between them is open</p></div>
-      </div>
-      <div class="pull">
-        <div class="q">“The bookkeeping layer sees totals, but not the line items. Between € 25 and € 175, nobody on the German market controls purchase prices at <span class="g">line-item level</span> — without inventory, recipes and a switch of tools.”</div>
-        <div class="src">Desk research, no field-study sample. Open points (e.g. how competitors handle the deposit) are marked as such in the PRD.</div>
-      </div>
-    </div>
-  </section>
-
   <!-- 4 · HYPOTHESES -->
   <section class="wrap">
     <div class="bigcard light">

@@ -61,23 +61,6 @@ export const caseHtmlDe = `
     </div>
   </section>
 
-  <!-- 3 · RECHERCHE -->
-  <section class="wrap">
-    <div class="bigcard light">
-      <span class="slabel clabel">Recherche &amp; Grundlagen</span>
-      <p class="prose" style="max-width:none">Ehrlich eingeordnet: keine Nutzer-Umfrage, sondern eine spec- und wettbewerbsgetriebene Grundlage. Ausgangspunkt war die Produkt-Spezifikation (Whitepaper), geschärft an vergleichbaren Location-/AR-Produkten und in Workshops mit den Stakeholdern.</p>
-      <div class="sources">
-          <div class="source"><div class="no">01</div><h4>Produkt-Spezifikation</h4><p>Whitepaper: Loops, Token-Logik, Connect2Earn, AR-Mechanik</p></div>
-          <div class="source"><div class="no">02</div><h4>Wettbewerbsanalyse</h4><p>Location-/AR-Apps — u. a. Pokémon GO, OVER</p></div>
-          <div class="source"><div class="no">03</div><h4>Stakeholder-Brainstorms</h4><p>Scope, Prioritäten, Machbarkeit — laufend mit PM &amp; Founders</p></div>
-      </div>
-      <div class="pull">
-        <div class="q">Der rote Faden aus der Recherche: die Stärke liegt im <span class="g">Zusammentreffen im echten Raum</span> — die App muss die Karte und die Wege dorthin lesbar machen, nicht die Token in den Vordergrund stellen.</div>
-        <div class="src">Grundlage = Spec + Wettbewerb + Workshops. Keine quantitative Nutzerforschung — bewusst als solche benannt.</div>
-      </div>
-    </div>
-  </section>
-
   <!-- 4 · KONZEPT & ENTSCHEIDUNGEN -->
   <section class="wrap">
     <div class="bigcard light">

@@ -63,24 +63,6 @@ export const caseHtmlDe = `
     </div>
   </section>
 
-  <!-- 3 · RECHERCHE -->
-  <section class="wrap">
-    <div class="bigcard light">
-      <span class="slabel clabel">Research · Desk &amp; Domäne</span>
-      <p class="prose" style="max-width:none">Ehrlich eingeordnet: keine Feldstudie mit Nutzer-Sample, sondern ein <strong>KI-gestützter Desk-Research-Workflow</strong>. Er lieferte eine belegte Wettbewerbssynthese, die deutschen Domänenregeln und zwei klar getrennte Nutzerprofile — die Grundlage für das PRD.</p>
-      <div class="sources">
-          <div class="source"><div class="no">01</div><h4>Wettbewerbsanalyse</h4><p>10 Produkte mit Preisen &amp; Reviews (FoodNotify, bimetrics, DATEV, MarginEdge …)</p></div>
-          <div class="source"><div class="no">02</div><h4>Domänenregeln</h4><p>USt 7/19 %, Pfand, GoBD, DATEV-EXTF</p></div>
-          <div class="source"><div class="no">03</div><h4>Zwei Nutzerprofile</h4><p>Küche (15 Sek.) vs. Inhaber (Desktop, morgens)</p></div>
-          <div class="source"><div class="no">04</div><h4>Marktstruktur</h4><p>Drei Schichten — die Naht dazwischen ist frei</p></div>
-      </div>
-      <div class="pull">
-        <div class="q">„Der Buchhaltungs-Layer sieht Summen, aber nicht die Positionen. Zwischen 25 € und 175 € kontrolliert am deutschen Markt niemand die Einkaufspreise auf <span class="g">Positionsebene</span> — ohne Inventar, Rezepturen und Systemwechsel."</div>
-        <div class="src">Desk-Research, kein Feldstudien-Sample. Offene Punkte (z. B. Pfand-Behandlung bei Wettbewerbern) sind im PRD als solche markiert.</div>
-      </div>
-    </div>
-  </section>
-
   <!-- 4 · HYPOTHESEN -->
   <section class="wrap">
     <div class="bigcard light">

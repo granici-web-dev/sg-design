@@ -61,23 +61,6 @@ export const caseHtmlEn = `
     </div>
   </section>
 
-  <!-- 3 · RESEARCH -->
-  <section class="wrap">
-    <div class="bigcard light">
-      <span class="slabel clabel">Research &amp; foundations</span>
-      <p class="prose" style="max-width:none">Honestly framed: no user survey, but a spec- and competition-driven foundation. The starting point was the product specification (whitepaper), sharpened against comparable location/AR products and in workshops with the stakeholders.</p>
-      <div class="sources">
-          <div class="source"><div class="no">01</div><h4>Product spec</h4><p>Whitepaper: loops, token logic, Connect2Earn, AR mechanics</p></div>
-          <div class="source"><div class="no">02</div><h4>Competitive analysis</h4><p>Location/AR apps — incl. Pokémon GO, OVER</p></div>
-          <div class="source"><div class="no">03</div><h4>Stakeholder brainstorms</h4><p>Scope, priorities, feasibility — ongoing with PM &amp; founders</p></div>
-      </div>
-      <div class="pull">
-        <div class="q">The through-line from research: the strength is the <span class="g">encounter in real space</span> — the app must make the map and the ways to get there legible, not push the tokens to the front.</div>
-        <div class="src">Foundation = spec + competition + workshops. No quantitative user research — named as such on purpose.</div>
-      </div>
-    </div>
-  </section>
-
   <!-- 4 · CONCEPT + DECISIONS -->
   <section class="wrap">
     <div class="bigcard light">
