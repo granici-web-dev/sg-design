@@ -19,7 +19,7 @@ export default async function Home({
     <>
       <header className="site" id="top">
         <div className="wrap row">
-          <a className="brand" href="#top"><span className="mk"></span>Serghei Granici</a>
+          <a className="brand" href="#top"><img src="/granici-logo.svg" alt="Gránici Design" width={112} height={31} /></a>
           <nav className="nav">
             <a className="hide-sm" href="#arbeiten">{t.nav.work}</a>
             <a className="hide-sm" href="#ueber">{t.nav.about}</a>

@@ -2,7 +2,7 @@ export const caseHtmlEn = `
 
 <header class="site">
   <div class="wrap row">
-    <a class="brand" href="/en"><span class="mk"></span>Serghei Granici</a>
+    <a class="brand" href="/en"><img src="/granici-logo.svg" alt="Gránici Design" width="112" height="31" /></a>
     <nav class="nav">
       <a class="hide-sm" href="/en/#arbeiten">Work</a>
       <a class="hide-sm" href="/en/#ueber">About</a>
