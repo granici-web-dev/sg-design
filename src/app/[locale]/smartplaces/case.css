@@ -17,7 +17,7 @@
   body{
     background:var(--bg);color:var(--ink);font-family:var(--sans);
     font-size:clamp(16px,1.04vw,17.5px);line-height:1.55;
-    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:clip;
   }
   a{color:inherit;text-decoration:none}
   img{display:block;max-width:100%;height:auto}
@@ -226,6 +226,114 @@
   .hyp .txt b{font-weight:600}
   .hyp .txt small{display:block;margin-top:9px;color:var(--ink-3);font-size:.88rem}
   @media(max-width:900px){.hyps{grid-template-columns:1fr}}
+
+  /* problem -> method -> solution — numbered timeline (xu.de "Unsere Lösung") */
+  .proc{margin-top:clamp(30px,3.6vw,48px);display:flex;flex-direction:column}
+  .pstep{display:grid;grid-template-columns:56px minmax(0,1fr) clamp(280px,33%,440px);
+    gap:clamp(18px,2.6vw,40px);padding:clamp(28px,3.6vw,52px) 0;align-items:start}
+  .pstep:first-child{padding-top:0}
+  .pstep:last-child{padding-bottom:0}
+  /* rail + lime number badge */
+  .prail{position:relative;display:flex;justify-content:center}
+  .prail::before{content:"";position:absolute;top:6px;bottom:calc(-1 * clamp(28px,3.6vw,52px) - 6px);
+    left:50%;width:2px;transform:translateX(-50%);background:var(--line)}
+  .pstep:last-child .prail::before{display:none}
+  .pnum{position:relative;z-index:1;width:46px;height:46px;border-radius:50%;background:var(--lime);
+    color:var(--ink);display:flex;align-items:center;justify-content:center;font-weight:600;font-size:1.15rem;
+    box-shadow:0 6px 20px -8px rgba(120,150,40,.5)}
+  .peyebrow{display:flex;align-items:center;gap:10px;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;
+    font-weight:600;color:var(--ink);margin-bottom:clamp(14px,1.8vw,20px)}
+  .peyebrow .star{color:var(--peri);letter-spacing:.04em}
+  /* big step heading + prose (xu.de "Unsere Lösung" style) */
+  .pstep-h{font-size:clamp(1.2rem,1.5vw,1.5rem);font-weight:600;line-height:1.22;letter-spacing:-.01em;
+    color:var(--ink);margin:0 0 clamp(16px,1.9vw,24px);text-wrap:balance}
+  .pstep-p{font-size:clamp(.98rem,1.02vw,1.06rem);color:var(--ink-2);line-height:1.55;max-width:38em;margin:0}
+  .pstep-p strong{color:var(--ink);font-weight:600}
+  /* Problem — Lösung labelled blocks inside a tile */
+  .ps{display:flex;flex-direction:column;gap:clamp(14px,1.8vw,20px)}
+  .plabel{display:inline-block;font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;font-weight:600;margin-bottom:6px}
+  .plabel.prob{color:var(--coral)}
+  .plabel.solu{color:var(--green)}
+  /* work tiles — one card per step, big screenshot, no scroll animation */
+  .stiles{display:flex;flex-direction:column;gap:clamp(18px,2.4vw,30px);margin-top:clamp(26px,3vw,40px)}
+  .stile .strow{display:grid;grid-template-columns:minmax(0,0.82fr) minmax(0,1.18fr);gap:clamp(28px,4vw,64px);align-items:start}
+  .stile .snum-row{display:flex;align-items:center;gap:14px;margin-bottom:clamp(14px,1.8vw,20px)}
+  .stile .snum-row .peyebrow{margin:0}
+  .stile .snum-row .pnum{width:40px;height:40px;font-size:1rem}
+  .stile .fig{margin:0}
+  @media(max-width:900px){.stile .strow{grid-template-columns:1fr;gap:clamp(18px,4vw,24px)}}
+  /* P / M / S mini-stack with coloured spine */
+  .pms3{display:flex;flex-direction:column;gap:clamp(13px,1.7vw,19px)}
+  .pcell{position:relative;padding-left:17px}
+  .pcell::before{content:"";position:absolute;left:0;top:3px;bottom:3px;width:3px;border-radius:3px;background:var(--ink-3)}
+  .pcell.prob::before{background:var(--coral)}
+  .pcell.meth::before{background:var(--peri)}
+  .pcell.solu::before{background:var(--green)}
+  .pcell .pmk{font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;font-weight:600;color:var(--ink-2);margin-bottom:4px}
+  .pcell.solu .pmk{color:var(--green)}
+  .pcell p{font-size:.98rem;color:var(--ink-2);line-height:1.5}
+  .pcell.solu p{color:var(--ink)}
+  .pfig{margin:0}
+  /* sticky-swap (xu.de "Unsere Lösung"): the step's media pins while its text scrolls,
+     then hands off to the next step's media at the same spot — desktop only. */
+  @media(min-width:901px){
+    /* full-screen steps, big media column that pins and swaps (xu.de 1:1) */
+    .proc.sticky-swap .pstep{grid-template-columns:44px minmax(240px,0.72fr) minmax(0,1.28fr);gap:clamp(26px,3.6vw,68px)}
+    .proc.sticky-swap .pbody{min-height:clamp(520px,76vh,960px);padding-top:clamp(16px,3vh,48px)}
+    .proc.sticky-swap .pfig{align-self:stretch}
+    .proc.sticky-swap .pfig-in{position:sticky;top:clamp(90px,11vh,132px)}
+    /* continuous rail + number badge pin alongside the media */
+    .proc.sticky-swap .prail{align-self:stretch}
+    .proc.sticky-swap .prail::before{top:0;bottom:0}
+    .proc.sticky-swap .pstep:last-child .prail::before{display:block}
+    .proc.sticky-swap .pnum{position:sticky;top:clamp(90px,11vh,132px)}
+  }
+  @media(max-width:900px){
+    .pstep{grid-template-columns:46px minmax(0,1fr);gap:clamp(14px,3vw,20px);padding:clamp(24px,6vw,32px) 0}
+    .prail::before{bottom:calc(-1 * clamp(24px,6vw,32px) - 6px)}
+    .pfig{grid-column:1 / -1;margin-top:clamp(14px,3vw,18px)}
+  }
+
+  /* scroll-reveal entrance — xu.de style (masked upward line reveal + stagger).
+     Gated by html.reveal-on (set from Reveal.tsx) so content stays visible if JS is off. */
+  @media(prefers-reduced-motion:no-preference){
+    /* simple fade-up for self-animating elements (eyebrows, intros) */
+    html.reveal-on [data-reveal]{opacity:0;transform:translateY(28px);
+      transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1);will-change:opacity,transform}
+    html.reveal-on [data-reveal].in{opacity:1;transform:none}
+
+    /* masked line reveal: .rv clips, inner .rvi rises from 110% below into place */
+    html.reveal-on .rv{overflow:hidden}
+    html.reveal-on .rv > .rvi{display:block;transform:translateY(110%);opacity:0;
+      transition:transform .9s cubic-bezier(.16,1,.3,1),opacity .8s cubic-bezier(.16,1,.3,1);will-change:transform,opacity}
+    html.reveal-on .in .rv > .rvi,
+    html.reveal-on .rv.in > .rvi{transform:none;opacity:1}
+
+    /* fade-up for grouped children (images) */
+    html.reveal-on .rvup{opacity:0;transform:translateY(32px);
+      transition:opacity .85s cubic-bezier(.16,1,.3,1),transform .85s cubic-bezier(.16,1,.3,1);will-change:opacity,transform}
+    html.reveal-on .in .rvup{opacity:1;transform:none}
+
+    /* auto fade-up items (from [data-reveal-auto] expansion) */
+    html.reveal-on .rva{opacity:0;transform:translateY(26px);
+      transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1);will-change:opacity,transform}
+    html.reveal-on .rva.in{opacity:1;transform:none}
+
+    /* hero entrance — pure CSS load animation (no JS gate → no flash, JS-off safe) */
+    .chero .hcenter .hlabel,
+    .chero .hcenter h1,
+    .chero .hcenter .subt,
+    .chero .hcenter .pill,
+    .chero .appcast,
+    .chero .meta{animation:heroRise .85s cubic-bezier(.16,1,.3,1) both}
+    .chero .hcenter .hlabel{animation-delay:.04s}
+    .chero .hcenter h1{animation-delay:.12s}
+    .chero .hcenter .subt{animation-delay:.22s}
+    .chero .hcenter .pill{animation-delay:.32s}
+    .chero .appcast{animation-delay:.40s}
+    .chero .meta{animation-delay:.52s}
+    @keyframes heroRise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+  }
 
   /* solution duo */
   .duo{display:grid;grid-template-columns:1fr 1fr;gap:clamp(26px,4vw,64px);align-items:center}
