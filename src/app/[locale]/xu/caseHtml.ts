@@ -7,7 +7,7 @@ export const caseHtmlDe = `
       <a class="hide-sm" href="/de/#arbeiten">Arbeiten</a>
       <a class="hide-sm" href="/de/#ueber">Über mich</a>
       <a href="/Lebenslauf_Serghei_Granici_2026.pdf">CV</a>
-      <a class="btn ghost" href="/en/xu" hreflang="en" aria-label="Switch to English">EN</a>
+      <div class="langtog"><a href="/de/xu" class="on">DE</a><a href="/en/xu" hreflang="en" aria-label="Switch to English">EN</a></div>
       <a class="btn solid" href="/de/#kontakt">Kontakt</a>
     </nav>
   </div>
