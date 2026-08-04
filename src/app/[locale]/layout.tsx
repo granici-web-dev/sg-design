@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { Onest } from "next/font/google";
 import "../globals.css";
 import { content, hasLocale, locales } from "./content";
+import AgentationDev from "../AgentationDev";
 
 const onest = Onest({
   variable: "--font-onest",
@@ -39,7 +40,10 @@ export default async function LocaleLayout({
   if (!hasLocale(locale)) notFound();
   return (
     <html lang={locale} className={onest.variable}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <AgentationDev />
+      </body>
     </html>
   );
 }
