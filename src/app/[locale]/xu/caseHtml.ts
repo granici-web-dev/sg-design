@@ -1,7 +1,7 @@
 export const caseHtmlDe = `
 
 <header class="site">
-  <div class="wrap row">
+  <div class="wrap"><div class="row">
     <a class="brand" href="/de"><img src="/granici-logo.svg" alt="Gránici Design" width="112" height="31" /></a>
     <nav class="nav">
       <a class="hide-sm" href="/de/#arbeiten">Arbeiten</a>
@@ -10,6 +10,7 @@ export const caseHtmlDe = `
       <div class="langtog"><a href="/de/xu" class="on">DE</a><a href="/en/xu" hreflang="en" aria-label="Switch to English">EN</a></div>
       <a class="btn solid" href="/de/#kontakt">Kontakt</a>
     </nav>
+  </div>
   </div>
 </header>
 

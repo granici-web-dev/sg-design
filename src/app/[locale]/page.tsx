@@ -18,7 +18,8 @@ export default async function Home({
   return (
     <>
       <header className="site" id="top">
-        <div className="wrap row">
+        <div className="wrap">
+        <div className="row">
           <a className="brand" href="#top"><img src="/granici-logo.svg" alt="Gránici Design" width={112} height={31} /></a>
           <nav className="nav">
             <a className="hide-sm" href="#arbeiten">{t.nav.work}</a>
@@ -30,6 +31,7 @@ export default async function Home({
             </div>
             <a className="btn solid" href="#kontakt">{t.nav.contact}</a>
           </nav>
+        </div>
         </div>
       </header>
 
