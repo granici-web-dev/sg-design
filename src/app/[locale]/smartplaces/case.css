@@ -35,8 +35,8 @@
   .brand{font-weight:500;font-size:.98rem;letter-spacing:-.01em;display:inline-flex;align-items:center;gap:9px}
   .brand .mk{width:9px;height:9px;border-radius:50%;background:var(--ink);display:inline-block}
   .nav{display:flex;gap:6px;align-items:center}
-  .nav a{font-size:.9rem;color:var(--ink-2);transition:color .16s}
-  .nav > a:not(.btn){padding:8px 14px;border-radius:100px;transition:background .16s,color .16s}
+  .nav a{font-size:.9rem;color:var(--ink);transition:color .16s}
+  .nav > a:not(.btn){padding:8px 18px;border-radius:100px;transition:background .16s,color .16s}
   .nav > a:not(.btn):hover{background:var(--lime);color:var(--ink)}
   @media(max-width:680px){.nav a.hide-sm{display:none}}
   .langtog{display:inline-flex;align-items:center;gap:2px;padding:3px;border:1px solid var(--line);border-radius:100px}
