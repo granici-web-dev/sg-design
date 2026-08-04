@@ -25,7 +25,7 @@ export default async function Home({
           <nav className="nav">
             <a className="hide-sm" href="#arbeiten">{t.nav.work}</a>
             <a className="hide-sm" href="#ueber">{t.nav.about}</a>
-            <a href="/Lebenslauf_Serghei_Granici_2026.pdf">{t.nav.cv}</a>
+            <a href="/Lebenslauf_Serghei_Granici_2026.pdf" target="_blank" rel="noopener noreferrer">{t.nav.cv}</a>
             <div className="langtog" role="group" aria-label={t.nav.switch}>
               <Link href="/de" hrefLang="de" className={locale === "de" ? "on" : ""}>DE</Link>
               <Link href="/en" hrefLang="en" className={locale === "en" ? "on" : ""}>EN</Link>
@@ -45,7 +45,7 @@ export default async function Home({
               <p className="subt">{t.hero.subPre}<span className="hl">{t.hero.subHl}</span>{t.hero.subPost}</p>
               <div className="pill">
                 <a className="btn light" href="#arbeiten">{t.hero.ctaWork} <span className="arw">↓</span></a>
-                <a className="btn ghost" href="/Lebenslauf_Serghei_Granici_2026.pdf" style={{ borderColor: "rgba(255,255,255,.22)", color: "#EDEEEF" }}>{t.hero.ctaCv}</a>
+                <a className="btn ghost" href="/Lebenslauf_Serghei_Granici_2026.pdf" target="_blank" rel="noopener noreferrer" style={{ borderColor: "rgba(255,255,255,.22)", color: "#EDEEEF" }}>{t.hero.ctaCv}</a>
               </div>
             </div>
             <div className="himg">
@@ -112,8 +112,8 @@ export default async function Home({
           <p>{t.contact.p}</p>
           <div className="cta">
             <a className="btn solid" href="mailto:granici.design@gmail.com">granici.design@gmail.com</a>
-            <a className="btn ghost" href="https://linkedin.com/in/serghei-granici">LinkedIn</a>
-            <a className="btn ghost" href="/Lebenslauf_Serghei_Granici_2026.pdf">{t.contact.cv}</a>
+            <a className="btn ghost" href="https://linkedin.com/in/serghei-granici" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a className="btn ghost" href="/Lebenslauf_Serghei_Granici_2026.pdf" target="_blank" rel="noopener noreferrer">{t.contact.cv}</a>
           </div>
         </section>
       </main>
@@ -123,8 +123,8 @@ export default async function Home({
           <span>{t.footer}</span>
           <span className="links">
             <a href="mailto:granici.design@gmail.com">E-Mail</a>
-            <a href="https://linkedin.com/in/serghei-granici">LinkedIn</a>
-            <a href="/Lebenslauf_Serghei_Granici_2026.pdf">CV</a>
+            <a href="https://linkedin.com/in/serghei-granici" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="/Lebenslauf_Serghei_Granici_2026.pdf" target="_blank" rel="noopener noreferrer">CV</a>
           </span>
         </div>
       </footer>

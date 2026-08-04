@@ -6,7 +6,7 @@ export const caseHtmlDe = `
     <nav class="nav">
       <a class="hide-sm" href="/de/#arbeiten">Arbeiten</a>
       <a class="hide-sm" href="/de/#ueber">Über mich</a>
-      <a href="/Lebenslauf_Serghei_Granici_2026.pdf">CV</a>
+      <a href="/Lebenslauf_Serghei_Granici_2026.pdf" target="_blank" rel="noopener noreferrer">CV</a>
       <div class="langtog"><a href="/de/smartplaces-app" class="on">DE</a><a href="/en/smartplaces-app" hreflang="en" aria-label="Switch to English">EN</a></div>
       <a class="btn solid" href="/de/#kontakt">Kontakt</a>
     </nav>
@@ -201,7 +201,7 @@ export const caseHtmlDe = `
     <div class="cta">
       <a class="btn solid" href="mailto:granici.design@gmail.com">granici.design@gmail.com</a>
       <a class="btn ghost" href="/de/#arbeiten">Alle Arbeiten</a>
-      <a class="btn ghost" href="/Lebenslauf_Serghei_Granici_2026.pdf">CV (PDF)</a>
+      <a class="btn ghost" href="/Lebenslauf_Serghei_Granici_2026.pdf" target="_blank" rel="noopener noreferrer">CV (PDF)</a>
     </div>
   </section>
 
@@ -212,8 +212,8 @@ export const caseHtmlDe = `
     <span>© 2026 Serghei Granici — Senior UI/UX Designer</span>
     <span class="links">
       <a href="mailto:granici.design@gmail.com">E-Mail</a>
-      <a href="https://linkedin.com/in/serghei-granici">LinkedIn</a>
-      <a href="/Lebenslauf_Serghei_Granici_2026.pdf">CV</a>
+      <a href="https://linkedin.com/in/serghei-granici" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="/Lebenslauf_Serghei_Granici_2026.pdf" target="_blank" rel="noopener noreferrer">CV</a>
     </span>
   </div>
 </footer>
