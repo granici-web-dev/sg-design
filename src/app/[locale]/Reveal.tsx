@@ -21,7 +21,10 @@ const GRID_SEL =
 // no per-section markup needed. Hero blocks are excluded (they have their own
 // CSS load animation and sit above the fold).
 const AUTO_SEL =
-  "main section > .bigcard, main .wtile, main .result, main section > .slabel, main section > .prose";
+  "main section > .bigcard, main .wtile, main .result, main section > .slabel, main section > .prose, " +
+  // home page blocks
+  "main .shead, main .projlead, main .projgrid > .proj, " +
+  "main section.contact > h2, main section.contact > p, main section.contact > .cta";
 
 export default function Reveal({ auto = false }: { auto?: boolean } = {}) {
   useEffect(() => {

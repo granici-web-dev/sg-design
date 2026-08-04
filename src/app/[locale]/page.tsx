@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { content, hasLocale, type Locale } from "./content";
 import LeadCard from "./LeadCard";
 import HoverVideo from "./HoverVideo";
+import Reveal from "./Reveal";
 
 export default async function Home({
   params,
@@ -127,6 +128,7 @@ export default async function Home({
           </span>
         </div>
       </footer>
+      <Reveal auto />
     </>
   );
 }

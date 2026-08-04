@@ -172,3 +172,30 @@
   footer.site .row{display:flex;flex-wrap:wrap;gap:14px 26px;justify-content:space-between;align-items:center}
   footer.site a{color:var(--ink-2)}footer.site a:hover{color:var(--ink)}
   footer.site .links{display:flex;gap:22px}
+
+  /* ---------- scroll-reveal entrance (light fade-up) ----------
+     Gated by html.reveal-on (set from Reveal.tsx) so content stays visible if JS is off,
+     and skipped for prefers-reduced-motion. */
+  @media(prefers-reduced-motion:no-preference){
+    html.reveal-on [data-reveal]{opacity:0;transform:translateY(24px);
+      transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1);will-change:opacity,transform}
+    html.reveal-on [data-reveal].in{opacity:1;transform:none}
+    html.reveal-on .rva{opacity:0;transform:translateY(24px);
+      transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1);will-change:opacity,transform}
+    html.reveal-on .rva.in{opacity:1;transform:none}
+
+    /* hero — pure CSS load animation (no JS gate → no flash, JS-off safe) */
+    .chero .htext .hlabel,
+    .chero .htext h1,
+    .chero .htext .subt,
+    .chero .htext .pill,
+    .chero .himg,
+    .chero .meta{animation:heroRise .85s cubic-bezier(.16,1,.3,1) both}
+    .chero .htext .hlabel{animation-delay:.04s}
+    .chero .htext h1{animation-delay:.12s}
+    .chero .htext .subt{animation-delay:.22s}
+    .chero .htext .pill{animation-delay:.32s}
+    .chero .himg{animation-delay:.30s}
+    .chero .meta{animation-delay:.50s}
+    @keyframes heroRise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+  }
