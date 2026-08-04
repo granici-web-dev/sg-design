@@ -17,10 +17,22 @@ import { useEffect } from "react";
 const GRID_SEL =
   ".cardfacts, .sources, .facts, .rolegrid, .cta, .wtiles, .hyps, .meta, .kvgrid, .projgrid, .phrow";
 
-export default function Reveal() {
+// In `auto` mode, reveal each major content block of a case page as a unit —
+// no per-section markup needed. Hero blocks are excluded (they have their own
+// CSS load animation and sit above the fold).
+const AUTO_SEL =
+  "main section > .bigcard, main .wtile, main .result, main section > .slabel, main section > .prose";
+
+export default function Reveal({ auto = false }: { auto?: boolean } = {}) {
   useEffect(() => {
     const root = document.documentElement;
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (auto) {
+      document
+        .querySelectorAll<HTMLElement>(AUTO_SEL)
+        .forEach((el) => el.classList.add("rva"));
+    }
 
     // Expand every [data-reveal-auto] container into individually-revealed items.
     document.querySelectorAll<HTMLElement>("[data-reveal-auto]").forEach((c) => {
@@ -74,7 +86,7 @@ export default function Reveal() {
     }
 
     return () => io.disconnect();
-  }, []);
+  }, [auto]);
 
   return null;
 }

@@ -4,6 +4,7 @@ import "../smartplaces/case.css";
 import { caseHtmlDe } from "./caseHtml";
 import { caseHtmlEn } from "./caseHtml.en";
 import { hasLocale, locales } from "../content";
+import Reveal from "../Reveal";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -39,5 +40,10 @@ export default async function GastroBelegCase({
   const { locale } = await params;
   if (!hasLocale(locale)) notFound();
   const html = locale === "en" ? caseHtmlEn : caseHtmlDe;
-  return <div dangerouslySetInnerHTML={{ __html: html }} />;
+  return (
+    <>
+      <div dangerouslySetInnerHTML={{ __html: html }} />
+      <Reveal auto />
+    </>
+  );
 }
