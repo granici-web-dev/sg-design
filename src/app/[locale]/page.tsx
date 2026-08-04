@@ -24,7 +24,10 @@ export default async function Home({
             <a className="hide-sm" href="#arbeiten">{t.nav.work}</a>
             <a className="hide-sm" href="#ueber">{t.nav.about}</a>
             <a href="/Lebenslauf_Serghei_Granici_2026.pdf">{t.nav.cv}</a>
-            <Link className="btn ghost" href={`/${other}`} hrefLang={other} aria-label={t.nav.switch}>{other.toUpperCase()}</Link>
+            <div className="langtog" role="group" aria-label={t.nav.switch}>
+              <Link href="/de" hrefLang="de" className={locale === "de" ? "on" : ""}>DE</Link>
+              <Link href="/en" hrefLang="en" className={locale === "en" ? "on" : ""}>EN</Link>
+            </div>
             <a className="btn solid" href="#kontakt">{t.nav.contact}</a>
           </nav>
         </div>
