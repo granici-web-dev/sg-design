@@ -115,11 +115,13 @@ export default function Consent({ texts }: { texts: ConsentTexts }) {
     return () => document.removeEventListener("keydown", onKey);
   }, [open, override]);
 
-  // Drop the analytics cookies whenever the standing answer is "no". This runs
-  // after mount — and, when consent was just withdrawn, after the reload below
-  // — so gtag is no longer alive to write its session cookie straight back.
+  // Drop the analytics cookies unless consent actually stands — an undecided
+  // visitor counts as "no", which also clears cookies left over from before
+  // this banner existed. It runs after mount, and after the reload below when
+  // consent was just withdrawn, so gtag is no longer alive to write its
+  // session cookie straight back.
   useEffect(() => {
-    if (choice !== "denied") return;
+    if (choice === "granted") return;
     clearAnalyticsCookies();
   }, [choice]);
 
