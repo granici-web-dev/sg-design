@@ -1,7 +1,18 @@
 "use client";
 
 import { useEffect, useRef, useState, useSyncExternalStore } from "react";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import {
+  CONSENT_DENIED,
+  CONSENT_GRANTED,
+  CONSENT_STORAGE_KEY as STORAGE_KEY,
+} from "./consent-config";
+
+declare global {
+  interface Window {
+    // Defined by the beforeInteractive consent script in the layout.
+    gtag?: (...args: unknown[]) => void;
+  }
+}
 
 export type ConsentTexts = {
   title: string;
@@ -12,8 +23,6 @@ export type ConsentTexts = {
 
 type Choice = "granted" | "denied";
 
-const STORAGE_KEY = "sg-consent";
-const gaId = process.env.NEXT_PUBLIC_GA_ID;
 const clarityId = process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID;
 
 // Same production gate as before: the ids exist in every environment, but the
@@ -125,29 +134,32 @@ export default function Consent({ texts }: { texts: ConsentTexts }) {
     clearAnalyticsCookies();
   }, [choice]);
 
-  // Clarity has no React component — it is imported only after consent, so the
-  // library is never even downloaded for visitors who decline.
+  // Clarity is imported only after consent, so the library is never even
+  // downloaded for visitors who decline. consentV2 mirrors the Consent Mode
+  // signals: measurement yes, advertising no.
   useEffect(() => {
     if (!isProd || choice !== "granted" || !clarityId) return;
     if (clarityStarted.current) return;
     clarityStarted.current = true;
     import("@microsoft/clarity").then((m) => {
       m.default.init(clarityId);
-      m.default.consent(true);
+      m.default.consentV2({ ad_Storage: "denied", analytics_Storage: "granted" });
     });
   }, [choice]);
 
   function decide(next: Choice) {
     setOverride("closed");
     storeChoice(next);
-    // gtag and Clarity are already running if consent was given earlier in
-    // this session; reloading is the only reliable way to unload them.
+    // The consent update is what actually switches gtag's storage on or off;
+    // it is sent on both answers so the tag never sits on the default.
+    window.gtag?.("consent", "update", next === "granted" ? CONSENT_GRANTED : CONSENT_DENIED);
+    // Clarity, unlike gtag, cannot be told to stand down once it is running —
+    // withdrawing consent therefore reloads the page to unload it.
     if (next === "denied" && choice === "granted") location.reload();
   }
 
   return (
     <>
-      {isProd && choice === "granted" && gaId && <GoogleAnalytics gaId={gaId} />}
       {open && (
         <div
           className="cc"

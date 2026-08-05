@@ -38,7 +38,7 @@ export const content = {
     footer: "© 2026 Serghei Granici — Senior UI/UX Designer",
     consent: {
       title: "Cookies & Analyse",
-      body: "Diese Seite nutzt Google Analytics und Microsoft Clarity, um zu verstehen, welche Arbeiten gelesen werden. Beides startet erst mit Ihrer Zustimmung — lehnen Sie ab, wird nichts gemessen und kein Analyse-Cookie gesetzt.",
+      body: "Diese Seite nutzt Google Analytics und Microsoft Clarity, um zu verstehen, welche Arbeiten gelesen werden. Ohne Ihre Zustimmung werden keine Cookies gesetzt und keine Sitzungen aufgezeichnet — Google erhält lediglich anonyme Signale ohne Cookies. Mit Ihrer Zustimmung wird die Nutzung vollständig gemessen.",
       accept: "Akzeptieren",
       decline: "Ablehnen",
       manage: "Cookies",
@@ -75,7 +75,7 @@ export const content = {
     footer: "© 2026 Serghei Granici — Senior UI/UX Designer",
     consent: {
       title: "Cookies & analytics",
-      body: "This site uses Google Analytics and Microsoft Clarity to understand which work gets read. Both start only once you agree — decline and nothing is measured, no analytics cookie is set.",
+      body: "This site uses Google Analytics and Microsoft Clarity to understand which work gets read. Without your consent no cookies are set and no sessions are recorded — Google only receives anonymous, cookieless signals. Agree and usage is measured in full.",
       accept: "Accept",
       decline: "Decline",
       manage: "Cookies",
