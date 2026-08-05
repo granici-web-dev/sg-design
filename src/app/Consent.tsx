@@ -19,6 +19,7 @@ export type ConsentTexts = {
   body: string;
   accept: string;
   decline: string;
+  privacy: string;
 };
 
 type Choice = "granted" | "denied";
@@ -81,7 +82,13 @@ function clearAnalyticsCookies() {
   }
 }
 
-export default function Consent({ texts }: { texts: ConsentTexts }) {
+export default function Consent({
+  texts,
+  privacyHref,
+}: {
+  texts: ConsentTexts;
+  privacyHref: string;
+}) {
   const choice = useSyncExternalStore(subscribe, getChoice, () => null);
   // The server cannot know what this visitor chose, so nothing renders until
   // hydration — otherwise the prerendered HTML would flash the banner at
@@ -172,7 +179,10 @@ export default function Consent({ texts }: { texts: ConsentTexts }) {
             {texts.title}
           </p>
           <p className="cc-body" id="cc-body">
-            {texts.body}
+            {texts.body}{" "}
+            <a className="cc-more" href={privacyHref}>
+              {texts.privacy}
+            </a>
           </p>
           <div className="cc-row">
             <button

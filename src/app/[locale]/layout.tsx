@@ -63,7 +63,10 @@ export default async function LocaleLayout({
         {/* Owns the banner, the consent updates sent to gtag, and Clarity —
             which stays fully gated, since a session recorder has no
             equivalent of a cookieless ping. */}
-        <Consent texts={content[locale].consent} />
+        <Consent
+          texts={content[locale].consent}
+          privacyHref={`/${locale}/datenschutz`}
+        />
         <AgentationDev />
       </body>
       {gaEnabled && <GoogleAnalytics gaId={gaId} />}

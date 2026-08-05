@@ -39,6 +39,8 @@ h1,h2,h3,h4,p{margin:0}
   animation:cc-in .45s cubic-bezier(.16,1,.3,1) both}
 .cc-title{font-size:1rem;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
 .cc-body{margin-top:8px;color:var(--ink-2);font-size:.88rem;line-height:1.5;text-wrap:pretty}
+.cc-more{color:var(--ink);text-decoration:underline;text-underline-offset:2px}
+.cc-more:hover{color:var(--blue)}
 .cc-row{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px}
 .cc-btn{font:inherit;font-size:.86rem;font-weight:500;line-height:1;padding:12px 22px;border-radius:100px;
   border:1px solid transparent;cursor:pointer;transition:transform .16s ease,background .16s,border-color .16s,color .16s}

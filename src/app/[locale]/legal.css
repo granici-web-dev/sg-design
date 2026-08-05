@@ -1,0 +1,26 @@
+/* Impressum and Datenschutzerklärung: one readable column, same type scale as
+   the rest of the site. Deliberately plain — legal text is for reading, not
+   for showing off. `.back` is duplicated from case.css so these pages do not
+   have to pull in the whole case stylesheet. */
+
+.back{padding-top:clamp(26px,4vw,44px)}
+.back a{display:inline-flex;align-items:center;gap:9px;color:var(--ink-3);font-size:.9rem;transition:color .16s}
+.back a:hover{color:var(--ink)}
+
+.legal{max-width:calc(var(--measure) + 2 * var(--gut));margin-inline:auto;
+  padding-top:clamp(18px,2.4vw,30px);padding-bottom:clamp(40px,6vw,80px)}
+.legal h1{font-size:clamp(2rem,4vw,3rem);font-weight:500;letter-spacing:-.02em;line-height:1.05}
+.legal-lead{margin-top:18px;color:var(--ink-2);font-size:1.08rem;line-height:1.55;text-wrap:pretty}
+
+/* site.css gives every <section> vertical padding — the nested ones here space
+   themselves through margins instead, so headings sit tight to their text. */
+.legal-sec{margin-top:clamp(30px,4vw,46px);padding-block:0}
+.legal-sec h2{font-size:clamp(1.15rem,1.8vw,1.35rem);font-weight:600;letter-spacing:-.01em;line-height:1.25}
+.legal-sec p{margin-top:12px;color:var(--ink-2);font-size:1rem;line-height:1.62;text-wrap:pretty}
+.legal-lines{color:var(--ink);line-height:1.75}
+
+.legal-updated{margin-top:clamp(36px,5vw,60px);padding-top:20px;border-top:1px solid var(--line-2);
+  color:var(--ink-3);font-size:.86rem}
+
+/* long URLs and mail addresses must not push the column wide on phones */
+.legal p{overflow-wrap:anywhere}
