@@ -207,6 +207,7 @@ export const caseHtmlEn = `
       <a href="mailto:granici.design@gmail.com">Email</a>
       <a href="https://linkedin.com/in/serghei-granici" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <a href="/Lebenslauf_Serghei_Granici_2026.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+      <button type="button" class="cc-link" data-cookie-settings>Cookies</button>
     </span>
   </div>
 </footer>

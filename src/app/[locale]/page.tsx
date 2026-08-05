@@ -125,6 +125,7 @@ export default async function Home({
             <a href="mailto:granici.design@gmail.com">E-Mail</a>
             <a href="https://linkedin.com/in/serghei-granici" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="/Lebenslauf_Serghei_Granici_2026.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+            <button type="button" className="cc-link" data-cookie-settings>{t.consent.manage}</button>
           </span>
         </div>
       </footer>

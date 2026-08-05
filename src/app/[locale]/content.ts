@@ -36,6 +36,13 @@ export const content = {
     },
     contact: { label: "Kontakt", h2: "Reden wir über Ihre nächste Rolle.", p: "Offen für Senior-Product/UI-UX-Design-Rollen im Raum Köln / Bonn und remote.", cv: "CV (PDF)" },
     footer: "© 2026 Serghei Granici — Senior UI/UX Designer",
+    consent: {
+      title: "Cookies & Analyse",
+      body: "Diese Seite nutzt Google Analytics und Microsoft Clarity, um zu verstehen, welche Arbeiten gelesen werden. Beides startet erst mit Ihrer Zustimmung — lehnen Sie ab, wird nichts gemessen und kein Analyse-Cookie gesetzt.",
+      accept: "Akzeptieren",
+      decline: "Ablehnen",
+      manage: "Cookies",
+    },
   },
   en: {
     htmlDescription:
@@ -66,5 +73,12 @@ export const content = {
     },
     contact: { label: "Contact", h2: "Let's talk about your next role.", p: "Open to senior product / UI-UX design roles in the Cologne / Bonn area and remote.", cv: "CV (PDF)" },
     footer: "© 2026 Serghei Granici — Senior UI/UX Designer",
+    consent: {
+      title: "Cookies & analytics",
+      body: "This site uses Google Analytics and Microsoft Clarity to understand which work gets read. Both start only once you agree — decline and nothing is measured, no analytics cookie is set.",
+      accept: "Accept",
+      decline: "Decline",
+      manage: "Cookies",
+    },
   },
 } as const;
