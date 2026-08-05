@@ -73,8 +73,8 @@ export default function LegalPageView({
             <a href="mailto:granici.design@gmail.com">E-Mail</a>
             <a href="https://linkedin.com/in/serghei-granici" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="/Lebenslauf_Serghei_Granici_2026.pdf" target="_blank" rel="noopener noreferrer">{t.nav.cv}</a>
-            <Link href={`/${locale}/impressum`}>{t.legalNav.impressum}</Link>
-            <Link href={`/${locale}/datenschutz`}>{t.legalNav.privacy}</Link>
+            <a href={`/${locale}/impressum`}>{t.legalNav.impressum}</a>
+            <a href={`/${locale}/datenschutz`}>{t.legalNav.privacy}</a>
             <button type="button" className="cc-link" data-cookie-settings>{t.consent.manage}</button>
           </span>
         </div>
