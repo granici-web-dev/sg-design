@@ -24,7 +24,7 @@ export const caseHtmlEn = `
     <div class="hcenter">
       <span class="hlabel">Web3 · Geo-SocialFi</span>
       <h1>SmartPlaces — A Web3 network built from<br><span class="mk">digital land.</span></h1>
-      <p class="subt">SmartPlaces divides the real world into hexagonal <span class="hl">land plots</span> on the Cardano blockchain. Whoever owns a plot becomes a “Pioneer” and earns from the activity on location — posts, events, businesses and ads.</p>
+      <p class="subt">Buying digital land meant owning a crypto wallet, holding $ADA and stomaching price swings between decision and payment. For anyone outside the Web3 bubble: <span class="hl">a wall</span>.</p>
       <div class="pill"><a class="btn solid" href="#kontext">Read case study <span class="arw">↓</span></a></div>
     </div>
 
@@ -52,11 +52,10 @@ export const caseHtmlEn = `
   <!-- 2 · CONTEXT + PROBLEM -->
   <section class="wrap" id="kontext">
     <div class="bigcard dark">
-      <span class="slabel c clabel">Context &amp; Problem</span>
+      <span class="slabel c clabel">The buyer at the wallet wall</span>
       <div class="prose cols">
         <p><strong>SmartPlaces</strong> is a location-based SocialFi network on the Cardano blockchain: a mobile app that divides the real world into hexagonal <strong>land plots</strong>. Whoever owns a plot becomes a “Pioneer” and earns from the activity at that location — posts, events, ads and businesses running there.</p>
-        <p>The engine of the network: plots sold. And that was exactly the problem: <strong>buying required a crypto wallet</strong> — users had to hold $ADA, understand a wallet flow and accept price swings between decision and payment. Doable for a Web3 audience; a wall for everyone else.</p>
-        <p>The business goal was clear: <strong>sell more land plots</strong> — by making the purchase work for people without crypto experience, too.</p>
+        <p>The engine of the network: plots sold. And that was exactly the problem: <strong>buying required a crypto wallet</strong> — users had to hold $ADA, understand a wallet flow and accept price swings between decision and payment. The business goal was clear: <strong>sell more land plots</strong>, by making the purchase work for people without crypto experience too.</p>
       </div>
       <div class="cardfacts">
         <div><div class="cfn">Wallet-only</div><div class="cfc">Purchase only with a crypto wallet and $ADA — the most common drop-off point before payment.</div></div>
@@ -72,7 +71,7 @@ export const caseHtmlEn = `
       <span class="slabel clabel">Hypotheses</span>
       <p class="prose" style="max-width:none">Three testable assumptions led to an internal credit system for the purchase — <strong>Land Plot Credits</strong> — instead of buying the plot directly by card.</p>
       <div class="hyps">
-          <div class="hyp"><span class="tag">H1</span><div class="txt"><b>If buying by card in euros is possible, then users without crypto experience will complete too,</b> because the wallet hurdle — the biggest drop-off point — is removed.</div></div>
+          <div class="hyp"><span class="tag">H1</span><div class="txt"><b>If buying by card in euros is possible, then users without crypto experience will complete too.</b></div></div>
           <div class="hyp"><span class="tag">H2</span><div class="txt"><b>If credits are bought in advance, then repeat purchases rise,</b> because the next plot is a one-click step at a stable euro price.</div></div>
           <div class="hyp"><span class="tag">H3</span><div class="txt"><b>If an intermediate currency separates the fiat purchase from the NFT mint, then payment and legal risks drop,</b> because card providers accept vouchers but often block direct NFT sales.</div></div>
       </div>
@@ -101,9 +100,36 @@ export const caseHtmlEn = `
     </div>
   </section>
 
-  <!-- 5b · BREADTH -->
+  <!-- 6 · VALIDATION -->
   <section class="wrap">
-    <span class="slabel clabel">Further work</span>
+    <div class="bigcard dark">
+      <span class="slabel clabel">Validation</span>
+      <p class="prose" style="max-width:none">The fiat path was validated as a <strong>hypothesis</strong> — the community survey before, the numbers after. It was rolled out in two steps, so each part works on its own:</p>
+      <div class="steps">
+        <div class="step"><div class="no">Step 1</div><h4>Make credits purchasable</h4><p>First the fiat purchase of the Land Plot Credits themselves — the new Web2 entry into the ecosystem.</p></div>
+        <div class="step"><div class="no">Step 2</div><h4>Buy a plot with credits</h4><p>Then the plot purchase via balance in one step.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · RESULT -->
+  <section class="wrap">
+    <div class="result">
+      <span class="slabel">Result</span>
+      <div class="big"><span class="plus">+</span>771</div>
+      <p class="sub">land plots sold in the <b>first week</b> after the fiat rollout.</p>
+      <div class="facts">
+        <div class="f"><div class="fk">Base before rollout</div><div class="fv">≈ 11,000 plots sold</div></div>
+        <div class="f"><div class="fk">First week</div><div class="fv">+771 plots · +7%</div></div>
+        <div class="f"><div class="fk">New entry point</div><div class="fv">Purchase by bank card instead of wallet</div></div>
+      </div>
+      <p class="note"><b>For context:</b> +771 is the first-week increase over the existing base of around 11,000 plots. The feature went live that week — the temporal correlation is strong; I don't claim an isolated causal proof against other effects. H2 (repeat purchases) and H3 (payment and legal risk) could no longer be measured in isolation within the observation window.</p>
+    </div>
+  </section>
+
+  <!-- 7b · BREADTH -->
+  <section class="wrap">
+    <span class="slabel clabel">What else I owned</span>
     <div class="wtiles">
       <div class="bigcard light wtile">
 
@@ -135,9 +161,8 @@ export const caseHtmlEn = `
           <div class="body">
             <span class="role">Purchase decision</span>
             <h3>Making a plot's value readable</h3>
-            <p>The map holds thousands of hexagons. A buyer decides not by coordinates, but by <strong>what&nbsp;is&nbsp;really&nbsp;at&nbsp;that&nbsp;place</strong>: which shops, cafés and landmarks sit on it — the more life, the higher the earning potential.</p>
-            <p>That's why the plot card shows real context — <strong>color-coding by status, filters by content and availability</strong> — instead of a data desert. The decision becomes the question “What's going on here?”.</p>
-          </div>
+            <p>The map holds thousands of hexagons. A buyer decides not by coordinates, but by <strong>what&nbsp;is&nbsp;really&nbsp;at&nbsp;that&nbsp;place</strong>: which shops, cafés and landmarks sit on it — the more life, the higher the earning potential. That is why the plot card shows real context — <strong>colour-coding by status, filters by content and availability</strong> — instead of a data desert.</p>
+            </div>
           <figure class="fig hoverable">
             <div class="shot"><img src="/screens/01-smartplaces-landplots.png" width="1440" height="900" alt="Map view with color-coded plots (occupied, for sale, owned) and content filters" decoding="async" loading="lazy"></div>
             <figcaption>Color-coded plots and content filters (NFTs, ads, events, posts) make the dense map readable.</figcaption>
@@ -152,8 +177,8 @@ export const caseHtmlEn = `
           <div class="body">
             <span class="role">AR mechanic</span>
             <h3>Making the invisible visible</h3>
-            <p>AR objects sit at real locations — but without a cue, no one knows there's something to grab nearby. The&nbsp;feature&nbsp;went&nbsp;undiscovered.</p>
-            <p><strong>My solution: a proximity push “Switch to AR — You are close!” → camera → collect the object at the real location.</strong> Reward: NFT, discount, ticket or SmartPoints. The user now knows when it's worth looking through the camera.</p>
+            <p>AR objects sit at real locations — but without a cue, no one knows there is something to grab nearby. The&nbsp;feature&nbsp;went&nbsp;undiscovered.</p>
+            <p><strong>My solution: a proximity push</strong> marking the exact moment it is worth looking through the camera — an invisible mechanic becomes an occasion. The full AR loop is in the <a href="/en/smartplaces-app" style="color:inherit;text-decoration:underline">SmartPlaces App case study</a>.</p>
           </div>
           <div class="fig">
             <div class="phones">
@@ -164,33 +189,6 @@ export const caseHtmlEn = `
         </div>
 
       </div>
-    </div>
-  </section>
-
-  <!-- 6 · VALIDATION -->
-  <section class="wrap">
-    <div class="bigcard dark">
-      <span class="slabel clabel">Validation</span>
-      <p class="prose" style="max-width:none">The fiat path was validated as a <strong>hypothesis</strong> — the community survey before, the numbers after. It was rolled out in two steps, so each part works on its own:</p>
-      <div class="steps">
-        <div class="step"><div class="no">Step 1</div><h4>Make credits purchasable</h4><p>First the fiat purchase of the Land Plot Credits themselves — the new Web2 entry into the ecosystem.</p></div>
-        <div class="step"><div class="no">Step 2</div><h4>Buy a plot with credits</h4><p>Then the plot purchase via balance in one step — confirmed by the sales figures afterwards.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 7 · RESULT -->
-  <section class="wrap">
-    <div class="result">
-      <span class="slabel">Result</span>
-      <div class="big"><span class="plus">+</span>771</div>
-      <p class="sub">land plots sold in the <b>first week</b> after the fiat rollout.</p>
-      <div class="facts">
-        <div class="f"><div class="fk">Base before rollout</div><div class="fv">≈ 11,000 plots sold</div></div>
-        <div class="f"><div class="fk">First week</div><div class="fv">+771 plots · +7%</div></div>
-        <div class="f"><div class="fk">New entry point</div><div class="fv">Purchase by bank card instead of wallet</div></div>
-      </div>
-      <p class="note"><b>For context:</b> +771 is the first-week increase over the existing base of around 11,000 plots. The feature went live that week — the temporal correlation is strong; I don't claim an isolated causal proof against other effects. H2 (repeat purchases) and H3 (payment and legal risk) could no longer be measured in isolation within the observation window.</p>
     </div>
   </section>
 
