@@ -23,7 +23,7 @@ export const caseHtmlEn = `
     <div class="hcenter">
       <span class="hlabel">Web3 · Geo-Social · AR</span>
       <h1>The real world as<br>a <span class="mk">social map.</span></h1>
-      <p class="subt">Design concept for the <span class="hl">SmartPlaces mobile app</span>: a location-based Web3 network — map, broadcasts, AR rewards and tokens — as one app you can use without any crypto knowledge. 107 screens, one design system.</p>
+      <p class="subt">Map, broadcasts, AR, NFTs, tokens, governance — <span class="hl">all in one consumer app</span>, usable by someone who has never seen a wallet.</p>
       <div class="pill"><a class="btn solid" href="#kontext">Read the case study <span class="arw">↓</span></a></div>
     </div>
 
@@ -48,11 +48,10 @@ export const caseHtmlEn = `
   <!-- 2 · CONTEXT + PROBLEM -->
   <section class="wrap" id="kontext">
     <div class="bigcard dark">
-      <span class="slabel c clabel">Context &amp; problem</span>
+      <span class="slabel c clabel">A person with no crypto knowledge</span>
       <div class="prose cols">
         <p><strong>SmartPlaces</strong> is a location-based Web3 network: the real world is split into hexagonal places, people meet at actual locations, own their data, and earn from their activity (<strong>Connect2Earn</strong>). A counter-model to extractive, algorithmic social media that puts virtual reach above real encounters.</p>
-        <p>The app is the portal into this ecosystem — and that was the design challenge: map, radius- and time-based broadcasts, chat, a feed, <strong>AR</strong>, NFTs, tokens, placements, governance — an enormous, crypto-heavy feature set had to fit into <strong>one</strong> app.</p>
-        <p>The task wasn't "more features" but the opposite: design this Web3 maximalism so an <strong>ordinary person with no crypto knowledge</strong> can use it from the very first screen.</p>
+        <p>The app is the portal into this ecosystem — and that was the design challenge: map, radius- and time-based broadcasts, chat, a feed, <strong>AR</strong>, NFTs, tokens, placements and governance had to fit into <strong>one</strong> app. The task was never “more features” but the opposite: design this Web3 maximalism so an <strong>ordinary person with no crypto knowledge</strong> can use it from the very first screen.</p>
       </div>
       <div class="cardfacts">
         <div><div class="cfn">Web3 maximalism</div><div class="cfc">Map + AR + tokens + social + placements + governance — all in one consumer app.</div></div>
@@ -62,22 +61,17 @@ export const caseHtmlEn = `
     </div>
   </section>
 
-  <!-- 4 · CONCEPT + DECISIONS -->
+  <!-- 4 · CORE LOOP -->
   <section class="wrap">
     <div class="bigcard light">
-      <span class="slabel clabel">Concept &amp; design decisions</span>
-      <p class="prose" style="max-width:none">One core loop holds it together: <strong>discover on the map → meet &amp; post in real space → claim via AR at real locations → get rewarded through Connect2Earn.</strong> Three decisions carried the design.</p>
-      <div class="hyps">
-          <div class="hyp"><span class="tag">01</span><div class="txt"><b>The map must make dense activity legible,</b> not just depict it. Hence hexagonal clusters with a count, a selectable radius and content filters instead of a wall of pins.</div></div>
-          <div class="hyp"><span class="tag">02</span><div class="txt"><b>Reward is tied to real presence.</b> The AR object to collect only appears at the actual location — the app guides you there with a push and a visible path.</div></div>
-          <div class="hyp"><span class="tag">03</span><div class="txt"><b>Tokens stay in the background.</b> The user sees "−10% at McDonald's" and a balance — not wallet addresses and gas. Web3 economy under the hood, Web2 clarity on the surface.</div></div>
-      </div>
+      <span class="slabel clabel">The core loop</span>
+      <p class="prose" style="max-width:none">One loop holds it together: <strong>discover on the map → meet &amp; post in real space → claim via AR at real locations → get rewarded through Connect2Earn.</strong> No step may presuppose wallet knowledge.</p>
     </div>
   </section>
 
   <!-- 5 · CORE LOOPS -->
   <section class="wrap">
-    <span class="slabel clabel">Core loops</span>
+    <span class="slabel clabel">The loops in detail</span>
     <div class="wtiles">
 
       <div class="bigcard light wtile">
@@ -127,9 +121,9 @@ export const caseHtmlEn = `
       <div class="bigcard light wtile">
         <div class="row2">
           <div class="body">
-            <span class="role">Rewards &amp; tokens · centrepiece</span>
+            <span class="role">Rewards &amp; tokens</span>
             <h3>Tokens that don't scare anyone off</h3>
-            <p>The second crux: making the economy tangible. The user sees two calm balances — <strong>SmartPoints</strong> (from activity) and <strong>$SPXT</strong> — plus a list of claimed rewards (discounts, NFTs). The source is a <strong>hyperlocal placement</strong> by a business; for the user it stays a clear benefit, not a crypto product.</p>
+            <p>The payoff of the loop, made visible. The user sees two calm balances — <strong>SmartPoints</strong> (from activity) and <strong>$SPXT</strong> — plus a list of claimed rewards (discounts, NFTs). The source is a <strong>hyperlocal placement</strong> by a business; for the user it stays a clear benefit, not a crypto product.</p>
           </div>
           <div class="fig">
             <div class="phrow">

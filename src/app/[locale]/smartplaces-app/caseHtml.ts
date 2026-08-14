@@ -23,7 +23,7 @@ export const caseHtmlDe = `
     <div class="hcenter">
       <span class="hlabel">Web3 · Geo-Social · AR</span>
       <h1>Die reale Welt als<br><span class="mk">soziale Karte.</span></h1>
-      <p class="subt">Design-Konzept der <span class="hl">SmartPlaces-Mobile-App</span>: ein geolokales Web3-Netzwerk — Karte, Broadcasts, AR-Belohnungen und Token — als eine App, die auch ohne Krypto-Wissen bedienbar ist. 107 Screens, ein Design-System.</p>
+      <p class="subt">Karte, Broadcasts, AR, NFTs, Token, Governance — <span class="hl">alles in eine Consumer-App</span>, bedienbar von jemandem, der noch nie eine Wallet gesehen hat.</p>
       <div class="pill"><a class="btn solid" href="#kontext">Fallstudie lesen <span class="arw">↓</span></a></div>
     </div>
 
@@ -36,7 +36,7 @@ export const caseHtmlDe = `
     </div>
 
     <div class="meta">
-      <div class="c"><div class="k">Rolle</div><div class="v">Sole UI/UX Designer<br><span style="color:var(--ink-3)">+ Art Direction, mit PM</span></div></div>
+      <div class="c"><div class="k">Rolle</div><div class="v">Alleiniger UI/UX Designer<br><span style="color:var(--ink-3)">+ Art Direction, mit PM</span></div></div>
       <div class="c"><div class="k">Zeitraum</div><div class="v">2024 – 2025</div></div>
       <div class="c"><div class="k">Plattform</div><div class="v">iOS &amp; Android<br><span style="color:var(--ink-3)">Native App</span></div></div>
       <div class="c"><div class="k">Domäne</div><div class="v">Web3 · Geo-Social · AR</div></div>
@@ -48,11 +48,10 @@ export const caseHtmlDe = `
   <!-- 2 · KONTEXT + PROBLEM -->
   <section class="wrap" id="kontext">
     <div class="bigcard dark">
-      <span class="slabel c clabel">Kontext &amp; Problem</span>
+      <span class="slabel c clabel">Ein Mensch ohne Krypto-Wissen</span>
       <div class="prose cols">
         <p><strong>SmartPlaces</strong> ist ein geolokales Web3-Netzwerk: Die reale Welt wird in hexagonale Orte aufgeteilt, Menschen treffen sich an echten Plätzen, besitzen ihre Daten selbst und verdienen an ihrer Aktivität mit (<strong>Connect2Earn</strong>). Gegenentwurf zur extraktiven, algorithmischen Social-Media, die virtuelle Reichweite über echte Begegnungen stellt.</p>
-        <p>Die App ist das Portal in dieses Ökosystem — und genau da lag die Design-Herausforderung: Karte, radius- und zeitbasierte Broadcasts, Chat, ein Feed, <strong>AR</strong>, NFTs, Token, Placements, Governance — ein enormer, krypto-lastiger Funktionsumfang sollte in <strong>eine</strong> App.</p>
-        <p>Die Aufgabe war nicht „mehr Features", sondern das Gegenteil: diesen Web3-Maximalismus so gestalten, dass ihn ein <strong>ganz normaler Mensch ohne Krypto-Wissen</strong> vom ersten Screen an bedienen kann.</p>
+        <p>Die App ist das Portal in dieses Ökosystem — und genau da lag die Design-Herausforderung: Karte, radius- und zeitbasierte Broadcasts, Chat, ein Feed, <strong>AR</strong>, NFTs, Token, Placements, Governance sollten in <strong>eine</strong> App. Die Aufgabe war dabei nicht „mehr Features“, sondern das Gegenteil: diesen Web3-Maximalismus so gestalten, dass ihn ein <strong>ganz normaler Mensch ohne Krypto-Wissen</strong> vom ersten Screen an bedienen kann.</p>
       </div>
       <div class="cardfacts">
         <div><div class="cfn">Web3-Maximalismus</div><div class="cfc">Karte + AR + Token + Social + Placements + Governance — alles in einer Consumer-App.</div></div>
@@ -62,22 +61,17 @@ export const caseHtmlDe = `
     </div>
   </section>
 
-  <!-- 4 · KONZEPT & ENTSCHEIDUNGEN -->
+  <!-- 4 · KERN-LOOP -->
   <section class="wrap">
     <div class="bigcard light">
-      <span class="slabel clabel">Konzept &amp; Design-Entscheidungen</span>
-      <p class="prose" style="max-width:none">Ein Kern-Loop hält alles zusammen: <strong>auf der Karte entdecken → im echten Raum treffen &amp; posten → per AR an realen Orten einlösen → über Connect2Earn belohnt werden.</strong> Drei Entscheidungen trugen den Entwurf.</p>
-      <div class="hyps">
-          <div class="hyp"><span class="tag">01</span><div class="txt"><b>Die Karte muss dichte Aktivität lesbar machen,</b> nicht abbilden. Deshalb hexagonale Cluster mit Anzahl, wählbarer Radius und Inhaltsfilter statt einer Pin-Wüste.</div></div>
-          <div class="hyp"><span class="tag">02</span><div class="txt"><b>Belohnung wird an echte Präsenz gebunden.</b> Erst am realen Ort erscheint das AR-Objekt zum Einsammeln — die App führt mit einem Push und einem sichtbaren Weg dorthin.</div></div>
-          <div class="hyp"><span class="tag">03</span><div class="txt"><b>Token bleiben im Hintergrund.</b> Der Nutzer sieht „−10 % bei McDonald's" und ein Guthaben — nicht Wallet-Adressen und Gas. Web3-Ökonomie unter der Haube, Web2-Klarheit an der Oberfläche.</div></div>
-      </div>
+      <span class="slabel clabel">Der Kern-Loop</span>
+      <p class="prose" style="max-width:none">Ein Loop hält alles zusammen: <strong>auf der Karte entdecken → im echten Raum treffen &amp; posten → per AR an realen Orten einlösen → über Connect2Earn belohnt werden.</strong> Kein Schritt darf Wallet-Wissen voraussetzen.</p>
     </div>
   </section>
 
   <!-- 5 · KERN-LOOPS -->
   <section class="wrap">
-    <span class="slabel clabel">Kern-Loops</span>
+    <span class="slabel clabel">Die Loops im Detail</span>
     <div class="wtiles">
 
       <div class="bigcard light wtile">
@@ -115,9 +109,9 @@ export const caseHtmlDe = `
 
       <div class="bigcard dark wtile">
         <span class="slabel g clabel">AR-Belohnung · Kernstück</span>
-        <p class="prose" style="max-width:none">Die anspruchsvollste Schleife — und die, die den digitalen Wert an die physische Welt bindet: <strong>Push „Switch to AR" bei Annäherung → Kamera → Objekt am realen Ort einsammeln → Belohnung.</strong> Der eingesammelte Gegenstand ist ein NFT, ein Rabatt oder ein Ticket — hier ein −10 %-Gutschein bei McDonald's, platziert als hyperlokale AR-Werbung.</p>
+        <p class="prose" style="max-width:none">Die anspruchsvollste Schleife — und die, die den digitalen Wert an die physische Welt bindet: <strong>Push „Switch to AR“ bei Annäherung → Kamera → Objekt am realen Ort einsammeln → Belohnung.</strong> Der eingesammelte Gegenstand ist ein NFT, ein Rabatt oder ein Ticket — hier ein −10 %-Gutschein bei McDonald's, platziert als hyperlokale AR-Werbung.</p>
         <div class="phrow" style="margin-top:clamp(24px,3vw,36px)">
-          <figure class="hoverable"><div class="shot"><img src="/screens/sp-app-ar-notify.png" width="750" height="1624" alt="Karte mit Benachrichtigung ‚Switch to AR — you are close'" decoding="async" loading="lazy"></div><figcaption>Push bei Annäherung: „Switch to AR".</figcaption></figure>
+          <figure class="hoverable"><div class="shot"><img src="/screens/sp-app-ar-notify.png" width="750" height="1624" alt="Karte mit Benachrichtigung ‚Switch to AR — you are close'" decoding="async" loading="lazy"></div><figcaption>Push bei Annäherung: „Switch to AR“.</figcaption></figure>
           <figure class="hoverable"><div class="shot"><img src="/screens/sp-app-ar-mode.png" width="750" height="1624" alt="AR-Kamera mit schwebendem Objekt (−10 %) und grünem Weg am Boden" decoding="async" loading="lazy"></div><figcaption>AR-Modus: Objekt am realen Ort, Weg führt hin.</figcaption></figure>
           <figure class="hoverable"><div class="shot"><img src="/screens/sp-app-ar-detected.png" width="750" height="1624" alt="Alert: Objekt erkannt, bereit zum Einsammeln" decoding="async" loading="lazy"></div><figcaption>Erkannt — bereit zum Einsammeln.</figcaption></figure>
           <figure class="hoverable"><div class="shot"><img src="/screens/sp-app-claimed.png" width="750" height="1624" alt="Reward claimed: McDonald's −10 %, gültig bis, Button ‚Join chat'" decoding="async" loading="lazy"></div><figcaption>Eingelöst: Rabatt im Wallet + Einladung in den Chat.</figcaption></figure>
@@ -127,9 +121,9 @@ export const caseHtmlDe = `
       <div class="bigcard light wtile">
         <div class="row2">
           <div class="body">
-            <span class="role">Rewards &amp; Token · Kernstück</span>
+            <span class="role">Rewards &amp; Token</span>
             <h3>Token, die niemanden abschrecken</h3>
-            <p>Die zweite Krux: die Ökonomie greifbar machen. Der Nutzer sieht zwei ruhige Guthaben — <strong>SmartPoints</strong> (durch Aktivität) und <strong>$SPXT</strong> — plus eine Liste eingelöster Belohnungen (Rabatte, NFTs). Die Herkunft ist eine <strong>hyperlokale Placement</strong> eines Unternehmens; für den Nutzer bleibt es ein klarer Vorteil, kein Krypto-Produkt.</p>
+            <p>Der Ertrag des Loops, sichtbar gemacht. Der Nutzer sieht zwei ruhige Guthaben — <strong>SmartPoints</strong> (durch Aktivität) und <strong>$SPXT</strong> — plus eine Liste eingelöster Belohnungen (Rabatte, NFTs). Die Herkunft ist eine <strong>hyperlokale Placement</strong> eines Unternehmens; für den Nutzer bleibt es ein klarer Vorteil, kein Krypto-Produkt.</p>
           </div>
           <div class="fig">
             <div class="phrow">
@@ -183,7 +177,7 @@ export const caseHtmlDe = `
       <div class="rolegrid">
         <div class="rcard">
           <span class="role">Rolle</span>
-          <p>Als <strong>Sole UI/UX Designer</strong> verantwortete ich Konzept, User Flows, alle Screens und das UI Kit — in enger Abstimmung mit einem <strong>PM</strong>. Zusätzlich führte ich per <strong>Art Direction</strong> einen Grafik- und einen Motion-Designer.</p>
+          <p>Als <strong>alleiniger UI/UX Designer</strong> verantwortete ich Konzept, User Flows, alle Screens und das UI Kit — in enger Abstimmung mit einem <strong>PM</strong>. Zusätzlich führte ich per <strong>Art Direction</strong> einen Grafik- und einen Motion-Designer.</p>
         </div>
         <div class="rcard">
           <span class="role peri">Prozess</span>
