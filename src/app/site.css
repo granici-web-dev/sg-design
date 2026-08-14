@@ -171,7 +171,7 @@
   footer.site{border-top:1px solid var(--line);padding-block:40px;color:var(--ink-3);font-size:.86rem;margin-top:clamp(20px,2.6vw,40px)}
   footer.site .row{display:flex;flex-wrap:wrap;gap:14px 26px;justify-content:space-between;align-items:center}
   footer.site a{color:var(--ink-2)}footer.site a:hover{color:var(--ink)}
-  footer.site .links{display:flex;gap:22px}
+  footer.site .links{display:flex;flex-wrap:wrap;gap:12px 22px}
 
   /* ---------- scroll-reveal entrance (light fade-up) ----------
      Gated by html.reveal-on (set from Reveal.tsx) so content stays visible if JS is off,
