@@ -23,7 +23,7 @@ export const caseHtmlDe = `
     <div class="hcenter">
       <span class="hlabel">EdTech · Design-System · White-label</span>
       <h1>Eine Plattform,<br><span class="mk">jede Marke.</span></h1>
-      <p class="subt">Punktueller Redesign der <span class="hl">XU – School of Sustainability</span>, einer B2B-Lernplattform: eine semantische <span class="hl">Farb-Architektur</span>, die sich in jede Kunden-CI einfügt — dazu konsistente Content-Komponenten und ein fokussierter Checkout. Agentur-seitig, 2021–2022.</p>
+      <p class="subt">Eine B2B-Lernplattform, die jeder Firmenkunde in <span class="hl">seinen eigenen Marken-Farben</span> bekommt — ohne dass sie für jede CI neu gestaltet werden muss.</p>
       <div class="pill"><a class="btn solid" href="#kontext">Fallstudie lesen <span class="arw">↓</span></a></div>
     </div>
 
@@ -48,11 +48,10 @@ export const caseHtmlDe = `
   <!-- 2 · KONTEXT + PROBLEM -->
   <section class="wrap" id="kontext">
     <div class="bigcard dark" data-reveal-auto>
-      <span class="slabel c clabel">Kontext &amp; Problem</span>
+      <span class="slabel c clabel">Jeder Kunde bringt seine eigene CI mit</span>
       <div class="prose cols">
-        <p><strong>XU – School of Sustainability</strong> ist eine B2B-Lernplattform: Unternehmen buchen sie, um ihre Mitarbeitenden zu Nachhaltigkeit weiterzubilden — mit Kursen, Live-Sessions, Artikeln und einem Expert-Channel. Ich kam agentur-seitig dazu: XU war unser Kunde, brachte Aufgaben auf Basis eigener Daten und Tests, ich lieferte das Design zurück.</p>
-        <p>Das Produkt existierte bereits — die Aufgabe war nicht „von null", sondern <strong>gezielt die Stellen reparieren, die klemmten</strong>. Und es klemmte an drei Fronten: das UI war über die Jahre <strong>fragmentiert</strong>, der <strong>Checkout</strong> verlor Nutzer, und jede Plattform musste in der <strong>Corporate Identity des jeweiligen Kunden</strong> ausgeliefert werden.</p>
-        <p>Genau dieser letzte Punkt war die eigentliche Härte: <strong>eine</strong> Plattform, aber jeder Firmenkunde sieht sie in seinen eigenen Marken-Farben — und es muss trotzdem gut aussehen, nicht nur „technisch eingefärbt".</p>
+        <p><strong>XU – School of Sustainability</strong> verkauft eine B2B-Lernplattform an Unternehmen, die ihre Mitarbeitenden zu Nachhaltigkeit weiterbilden. Ein neuer Firmenkunde kauft Lizenzen, verteilt sie an seine Leute — und erwartet die Plattform in <strong>seiner eigenen Corporate Identity</strong>.</p>
+        <p>Genau da lag die Härte: <strong>eine</strong> Plattform, aber jeder Kunde sieht sie in seinen Marken-Farben — und sie muss dabei gut aussehen, nicht nur „technisch eingefärbt“. Dazu ein über die Jahre fragmentiertes UI und ein Checkout, der Nutzer verlor. Ich kam agentur-seitig dazu: XU brachte Aufgaben auf Basis eigener Daten und Tests, ich lieferte das Design zurück.</p>
       </div>
     </div>
   </section>
@@ -60,7 +59,7 @@ export const caseHtmlDe = `
   <!-- 4 · VORGEHEN: PROBLEM -> METHODE -> LÖSUNG (Kern des Cases) -->
   <section class="wrap">
     <span class="slabel clabel" data-reveal>Vorgehen · Problem → Methode → Lösung</span>
-    <p class="prose" style="max-width:none" data-reveal>Drei Baustellen, drei gezielte Vorgehen. Kein „von null" — jede Entscheidung folgt aus dem, was das Audit zutage gebracht hat. Eine davon ist das Herzstück und macht die anderen erst skalierbar.</p>
+    <p class="prose" style="max-width:none" data-reveal>Drei Baustellen, kein „von null“. Die dritte ist das Herzstück — sie macht die anderen beiden erst skalierbar.</p>
 
     <div class="stiles" data-reveal-auto>
 
@@ -89,8 +88,10 @@ export const caseHtmlDe = `
             </div>
           </div>
           <div class="fig">
-            <figure class="hoverable" style="margin-bottom:clamp(10px,1.4vw,14px)"><div class="shot"><img src="/screens/xu-checkout-before.jpg" width="1280" height="720" alt="Alter Checkout: geteilter Screen, Lizenzanzahl per Dropdown" decoding="async" loading="lazy"></div><figcaption><b>Vorher:</b> geteilter Screen, Dropdown.</figcaption></figure>
-            <figure class="hoverable"><div class="shot"><img src="/screens/xu-checkout-after-1.jpg" width="1280" height="910" alt="Neuer Checkout: zentrierte Karte mit +/− Stepper" decoding="async" loading="lazy"></div><figcaption><b>Nachher:</b> Fokus-Screen + Stepper.</figcaption></figure>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));grid-template-rows:auto auto;gap:clamp(8px,1vw,12px);align-items:start">
+              <figure class="hoverable" style="display:grid;grid-template-rows:subgrid;grid-row:span 2;gap:0;align-items:start"><div class="shot"><img src="/screens/xu-checkout-before.jpg" width="1280" height="720" alt="Alter Checkout: geteilter Screen, Lizenzanzahl per Dropdown" decoding="async" loading="lazy"></div><figcaption><b>Vorher:</b> geteilter Screen, Dropdown.</figcaption></figure>
+              <figure class="hoverable" style="display:grid;grid-template-rows:subgrid;grid-row:span 2;gap:0;align-items:start"><div class="shot"><img src="/screens/xu-checkout-after-1.jpg" width="1280" height="910" alt="Neuer Checkout: zentrierte Karte mit +/− Stepper" decoding="async" loading="lazy"></div><figcaption><b>Nachher:</b> Fokus-Screen + Stepper.</figcaption></figure>
+            </div>
           </div>
         </div>
       </div>
@@ -101,7 +102,7 @@ export const caseHtmlDe = `
             <div class="snum-row"><span class="pnum">3</span><span class="peyebrow">Farb-Architektur</span></div>
             <h3 class="pstep-h">Ein Farbsystem, das jede Marke tragen kann</h3>
             <div class="ps">
-              <div><span class="plabel prob">Problem</span><p class="pstep-p">Eine Plattform, aber jeder Firmenkunde sieht sie in seinen eigenen Marken-Farben — und sie muss trotzdem schön bleiben, nicht nur „technisch eingefärbt".</p></div>
+              <div><span class="plabel prob">Problem</span><p class="pstep-p">Farben pro Kunde austauschen ist trivial. Sie so austauschen, dass Kontraste und Hierarchie bei <em>jeder</em> CI halten, ist es nicht.</p></div>
               <div><span class="plabel solu">Lösung</span><p class="pstep-p">Über ein heuristisches Audit <strong>semantische Farb-Tokens</strong> gebaut (Primary, Secondary, Surface, Background, Text, Accent). Der Kunde setzt 3–4 CI-Farben im Backoffice, Neutrale und Kontrast-Regeln bleiben fix — jeder Kunde themt sich vorhersagbar.</p></div>
             </div>
           </div>
@@ -131,7 +132,7 @@ export const caseHtmlDe = `
         <div class="f"><div class="fk">Konsistenz</div><div class="fv">4 vereinheitlichte Content-Komponenten</div></div>
         <div class="f"><div class="fk">Checkout</div><div class="fv">Fokussierter 3-Schritt-Flow · Standard-Muster</div></div>
       </div>
-      <p class="note"><b>Ehrliche Einordnung:</b> Ich arbeitete <b>agentur-seitig</b> für XU als Kunden und habe <b>gezielt</b> problematische Bereiche neu gestaltet, nicht die Plattform von null gebaut. Usability-Tests und Nutzungsdaten lagen bei XU — daher hier <b>keine Conversion- oder Nutzungszahlen</b>. Validierung: Kunde und Entwickler-Team waren mit Farb-Architektur und Komponenten zufrieden; der Redesign wurde umgesetzt.</p>
+      <p class="note"><b>Ehrliche Einordnung:</b> agentur-seitig, gezielter Redesign — nicht die Plattform von null. Usability-Tests und Nutzungsdaten lagen bei XU, deshalb hier <b>keine Conversion- oder Nutzungszahlen</b>. Was belegbar ist: Farb-Architektur und Komponenten wurden vom Entwickler-Team übernommen und client-seitig eingebaut.</p>
     </div>
   </section>
 

@@ -23,7 +23,7 @@ export const caseHtmlEn = `
     <div class="hcenter">
       <span class="hlabel">EdTech · Design system · White-label</span>
       <h1>One platform,<br><span class="mk">every brand.</span></h1>
-      <p class="subt">A targeted redesign of <span class="hl">XU – School of Sustainability</span>, a B2B learning platform: a semantic <span class="hl">colour architecture</span> that adapts to any client's brand — plus consistent content components and a focused checkout. Agency-side, 2021–2022.</p>
+      <p class="subt">A B2B learning platform every corporate client gets in <span class="hl">their own brand colours</span> — without redesigning it for each CI.</p>
       <div class="pill"><a class="btn solid" href="#kontext">Read case study <span class="arw">↓</span></a></div>
     </div>
 
@@ -48,11 +48,10 @@ export const caseHtmlEn = `
   <!-- 2 · CONTEXT + PROBLEM -->
   <section class="wrap" id="kontext">
     <div class="bigcard dark" data-reveal-auto>
-      <span class="slabel c clabel">Context &amp; problem</span>
+      <span class="slabel c clabel">Every client brings their own CI</span>
       <div class="prose cols">
-        <p><strong>XU – School of Sustainability</strong> is a B2B learning platform: companies book it to train their staff on sustainability — with courses, live sessions, articles and an expert channel. I joined agency-side: XU was our client, brought tasks based on their own data and testing, and I delivered the design back.</p>
-        <p>The product already existed — the brief was never „from scratch", but to <strong>fix, precisely, the parts that were sticking</strong>. And it stuck on three fronts: the UI had grown <strong>fragmented</strong> over the years, the <strong>checkout</strong> was losing users, and every deployment had to ship in the <strong>respective client's corporate identity</strong>.</p>
-        <p>That last point was the real challenge: <strong>one</strong> platform, but each corporate client sees it in their own brand colours — and it still has to look good, not just be „tinted" by a script.</p>
+        <p><strong>XU – School of Sustainability</strong> sells a B2B learning platform to companies training their staff on sustainability. A new corporate client buys licences, hands them to their people — and expects the platform in <strong>their own corporate identity</strong>.</p>
+        <p>That was the hard part: <strong>one</strong> platform, but every client sees it in their brand colours — and it still has to look good, not just be “tinted” by a script. On top of that, a UI fragmented over the years and a checkout that was losing users. I joined agency-side: XU brought tasks based on their own data and testing, and I delivered the design back.</p>
       </div>
     </div>
   </section>
@@ -60,7 +59,7 @@ export const caseHtmlEn = `
   <!-- 4 · APPROACH: PROBLEM -> METHOD -> SOLUTION (core of the case) -->
   <section class="wrap">
     <span class="slabel clabel" data-reveal>Approach · Problem → Method → Solution</span>
-    <p class="prose" style="max-width:none" data-reveal>Three problem areas, three deliberate approaches. Not „from scratch" — every decision follows from what the audit surfaced. One of them is the core, and it's what makes the others scale.</p>
+    <p class="prose" style="max-width:none" data-reveal>Three problem areas, none of them “from scratch”. The third is the core — it is what makes the other two scale.</p>
 
     <div class="stiles" data-reveal-auto>
 
@@ -89,8 +88,10 @@ export const caseHtmlEn = `
             </div>
           </div>
           <div class="fig">
-            <figure class="hoverable" style="margin-bottom:clamp(10px,1.4vw,14px)"><div class="shot"><img src="/screens/xu-checkout-before.jpg" width="1280" height="720" alt="Old checkout: split screen, licence count via dropdown" decoding="async" loading="lazy"></div><figcaption><b>Before:</b> split screen, dropdown.</figcaption></figure>
-            <figure class="hoverable"><div class="shot"><img src="/screens/xu-checkout-after-1.jpg" width="1280" height="910" alt="New checkout: a centred card with a +/− stepper" decoding="async" loading="lazy"></div><figcaption><b>After:</b> focused screen + stepper.</figcaption></figure>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));grid-template-rows:auto auto;gap:clamp(8px,1vw,12px);align-items:start">
+              <figure class="hoverable" style="display:grid;grid-template-rows:subgrid;grid-row:span 2;gap:0;align-items:start"><div class="shot"><img src="/screens/xu-checkout-before.jpg" width="1280" height="720" alt="Old checkout: split screen, licence count via dropdown" decoding="async" loading="lazy"></div><figcaption><b>Before:</b> split screen, dropdown.</figcaption></figure>
+              <figure class="hoverable" style="display:grid;grid-template-rows:subgrid;grid-row:span 2;gap:0;align-items:start"><div class="shot"><img src="/screens/xu-checkout-after-1.jpg" width="1280" height="910" alt="New checkout: a centred card with a +/− stepper" decoding="async" loading="lazy"></div><figcaption><b>After:</b> focused screen + stepper.</figcaption></figure>
+            </div>
           </div>
         </div>
       </div>
@@ -101,7 +102,7 @@ export const caseHtmlEn = `
             <div class="snum-row"><span class="pnum">3</span><span class="peyebrow">Colour architecture</span></div>
             <h3 class="pstep-h">A colour system that can carry any brand</h3>
             <div class="ps">
-              <div><span class="plabel prob">Problem</span><p class="pstep-p">One platform, but every corporate client sees it in their own brand colours — and it still has to look good, not just be „technically recoloured".</p></div>
+              <div><span class="plabel prob">Problem</span><p class="pstep-p">Swapping colours per client is trivial. Swapping them so that contrast and hierarchy hold up under <em>every</em> CI is not.</p></div>
               <div><span class="plabel solu">Solution</span><p class="pstep-p">Through a heuristic audit, <strong>semantic colour tokens</strong> (Primary, Secondary, Surface, Background, Text, Accent). The client sets 3–4 CI colours in the back office, neutrals and contrast rules stay fixed — every client themes predictably.</p></div>
             </div>
           </div>
@@ -131,7 +132,7 @@ export const caseHtmlEn = `
         <div class="f"><div class="fk">Consistency</div><div class="fv">4 unified content components</div></div>
         <div class="f"><div class="fk">Checkout</div><div class="fv">Focused 3-step flow · standard patterns</div></div>
       </div>
-      <p class="note"><b>Honest framing:</b> I worked <b>agency-side</b> for XU as the client and <b>deliberately</b> redesigned problem areas — I didn't build the platform from scratch. Usability tests and usage data were owned by XU — so <b>no conversion or usage numbers</b> here. Validation: the client and the developer team were happy with the colour architecture and components; the redesign was shipped.</p>
+      <p class="note"><b>Honest framing:</b> agency-side, a targeted redesign — not the platform from scratch. Usability tests and usage data were owned by XU, so <b>no conversion or usage numbers</b> here. What is verifiable: the colour architecture and components were adopted by the developer team and built client-side.</p>
     </div>
   </section>
 
