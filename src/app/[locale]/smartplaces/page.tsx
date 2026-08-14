@@ -4,6 +4,7 @@ import "./case.css";
 import { caseHtmlDe } from "./caseHtml";
 import { caseHtmlEn } from "./caseHtml.en";
 import { hasLocale, locales } from "../content";
+import { pageMetadata } from "../seo";
 import Reveal from "../Reveal";
 
 export function generateStaticParams() {
@@ -29,7 +30,8 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  return hasLocale(locale) ? meta[locale] : meta.de;
+  const l = hasLocale(locale) ? locale : "de";
+  return pageMetadata({ locale: l, path: "/smartplaces", ...meta[l] });
 }
 
 export default async function SmartPlacesCase({

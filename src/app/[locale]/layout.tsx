@@ -5,6 +5,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { Onest } from "next/font/google";
 import "../globals.css";
 import { content, hasLocale, locales } from "./content";
+import { siteName, siteUrl } from "./seo";
 import AgentationDev from "../AgentationDev";
 import Consent from "../Consent";
 import { consentDefaultScript } from "../consent-config";
@@ -35,7 +36,11 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = hasLocale(locale) ? content[locale] : content.de;
   return {
-    title: "Serghei Granici — Senior UI/UX Designer",
+    // Set once, here, so every relative URL below this segment — canonicals,
+    // hreflang, og:image — resolves to an absolute one. Each page then owns
+    // its own canonical; none is inherited from this layout on purpose.
+    metadataBase: new URL(siteUrl),
+    title: siteName,
     description: t.htmlDescription,
   };
 }

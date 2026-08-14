@@ -1,10 +1,27 @@
+import type { Metadata } from "next";
 import "../site.css";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { content, hasLocale, type Locale } from "./content";
+import { pageMetadata, siteName } from "./seo";
 import LeadCard from "./LeadCard";
 import HoverVideo from "./HoverVideo";
 import Reveal from "./Reveal";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const l = hasLocale(locale) ? locale : "de";
+  return pageMetadata({
+    locale: l,
+    path: "",
+    title: siteName,
+    description: content[l].htmlDescription,
+  });
+}
 
 export default async function Home({
   params,

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import "../../site.css";
 import "../legal.css";
 import { hasLocale, locales } from "../content";
+import { pageMetadata } from "../seo";
 import { impressum } from "../legalContent";
 import LegalPageView from "../LegalPageView";
 
@@ -16,8 +17,14 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const page = hasLocale(locale) ? impressum[locale] : impressum.de;
-  return { title: `${page.title} · Serghei Granici`, description: page.lead };
+  const l = hasLocale(locale) ? locale : "de";
+  const page = impressum[l];
+  return pageMetadata({
+    locale: l,
+    path: "/impressum",
+    title: `${page.title} · Serghei Granici`,
+    description: page.lead,
+  });
 }
 
 export default async function ImpressumPage({
